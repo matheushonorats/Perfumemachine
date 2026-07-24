@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#121212" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Meu Perfume" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Meu Perfume</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">CONSULTOR PESSOAL</div>
+      <h1>Meu Perfume</h1>
+    </div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Configurações">⚙️</button>
+  </header>
+
+  <main id="app">
+    <section id="homeView" class="view active">
+      <div class="hero-card">
+        <div>
+          <span class="pill" id="weatherPill">Clima não carregado</span>
+          <h2>Qual perfume combina com você hoje?</h2>
+          <p>O app considera clima, ocasião, seu estado emocional e seu histórico.</p>
+        </div>
+        <button class="primary" id="startBtn">Escolher meu perfume</button>
+        <button class="secondary" id="quickBtn">Sugestão rápida</button>
+      </div>
+
+      <div class="grid two">
+        <button class="menu-card" data-view="collectionView">
+          <span>🧴</span><strong>Minha coleção</strong><small id="collectionCount"></small>
+        </button>
+        <button class="menu-card" data-view="historyView">
+          <span>🕘</span><strong>Histórico</strong><small id="historyCount"></small>
+        </button>
+      </div>
+
+      <div class="section-title"><h3>Atalhos</h3></div>
+      <div class="quick-actions">
+        <button id="forgottenBtn">Perfume esquecido</button>
+        <button id="surpriseBtn">Surpreenda-me</button>
+        <button id="favoritesBtn">Só favoritos</button>
+      </div>
+    </section>
+
+    <section id="quizView" class="view">
+      <div class="progress"><div id="progressBar"></div></div>
+      <div class="quiz-card">
+        <button class="back-link" id="quizBack">← Voltar</button>
+        <div class="step-label" id="stepLabel"></div>
+        <h2 id="questionTitle"></h2>
+        <p id="questionHelp"></p>
+        <div id="options" class="options"></div>
+        <div class="quiz-actions">
+          <button class="secondary" id="prevBtn">Anterior</button>
+          <button class="primary" id="nextBtn">Continuar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultView" class="view">
+      <button class="back-link" data-view="homeView">← Início</button>
+      <div class="result-head">
+        <span class="pill">RECOMENDAÇÃO</span>
+        <h2>Seu perfume para agora</h2>
+      </div>
+      <div id="mainResult"></div>
+      <h3>Outras boas opções</h3>
+      <div id="alternatives" class="alternatives"></div>
+      <div class="result-actions">
+        <button class="primary" id="wearBtn">Vou usar este</button>
+        <button class="secondary" id="anotherBtn">Quero outra sugestão</button>
+        <button class="ghost" id="restartBtn">Refazer perguntas</button>
+      </div>
+    </section>
+
+    <section id="collectionView" class="view">
+      <button class="back-link" data-view="homeView">← Início</button>
+      <div class="section-title"><h2>Minha coleção</h2><button class="small-btn" id="addPerfumeBtn">+ Adicionar</button></div>
+      <input class="search" id="searchInput" placeholder="Buscar perfume..." />
+      <div class="filters">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="favorite">Favoritos</button>
+        <button class="filter" data-filter="active">Ativos</button>
+        <button class="filter" data-filter="hidden">Ocultos</button>
+      </div>
+      <div id="collectionList" class="list"></div>
+    </section>
+
+    <section id="historyView" class="view">
+      <button class="back-link" data-view="homeView">← Início</button>
+      <div class="section-title"><h2>Histórico</h2><button class="small-btn danger" id="clearHistoryBtn">Limpar</button></div>
+      <div id="historyList" class="list"></div>
+    </section>
+  </main>
+
+  <dialog id="perfumeDialog">
+    <form method="dialog" id="perfumeForm">
+      <h3 id="dialogTitle">Editar perfume</h3>
+      <input type="hidden" id="perfumeId" />
+      <label>Nome<input id="perfumeName" required /></label>
+      <label>Família principal
+        <select id="perfumeFamily">
+          <option value="fresco">Fresco</option><option value="citrico">Cítrico</option>
+          <option value="aquatico">Aquático</option><option value="aromatico">Aromático</option>
+          <option value="amadeirado">Amadeirado</option><option value="especiado">Especiado</option>
+          <option value="doce">Doce</option><option value="gourmand">Gourmand</option>
+          <option value="couro">Couro</option><option value="tabaco">Tabaco</option>
+          <option value="vetiver">Vetiver</option><option value="ambarado">Âmbar</option>
+        </select>
+      </label>
+      <label>Intensidade
+        <select id="perfumeIntensity"><option value="1">Discreta</option><option value="2">Moderada</option><option value="3">Marcante</option><option value="4">Muito marcante</option></select>
+      </label>
+      <label><input type="checkbox" id="perfumeFavorite" /> Favorito</label>
+      <label><input type="checkbox" id="perfumeActive" /> Participar das recomendações</label>
+      <menu><button value="cancel" class="secondary">Cancelar</button><button value="default" class="primary" id="savePerfumeBtn">Salvar</button></menu>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
