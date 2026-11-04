@@ -312,6 +312,14 @@ function validateImport(data){
  for(const t of data.experiences){if(!ids.has(t.perfumeId))throw Error('Experiência com referência inexistente.');}
  if(data.quickUses!==undefined){if(!Array.isArray(data.quickUses)||data.quickUses.some(t=>!ids.has(t.perfumeId)))throw Error('Registros rápidos inválidos.');}
  if(data.journey!==undefined){if(!data.journey||!Array.isArray(data.journey.ids)||data.journey.ids.some(id=>!ids.has(id)))throw Error('Seleção guiada inválida.');}
+ if(data.triage!==undefined){
+  const t=data.triage;
+  if(!t||typeof t.answers!=='object'||!Array.isArray(t.rounds))throw Error('Triagem incompatível.');
+  for(const r of [...t.rounds,...[t.current,t.pending].filter(Boolean)]){
+   if(!Array.isArray(r.group)||r.group.some(id=>!ids.has(id))||new Set(r.group).size!==r.group.length||
+      (r.winner&&!ids.has(r.winner))||(r.rejected||[]).some(id=>!ids.has(id)))throw Error('Triagem contém referência inválida.');
+  }
+ }
  if(data.signatures.main&&!ids.has(data.signatures.main.perfumeId))throw Error('Assinatura ativa sem perfume correspondente.');
  return true;
 }
@@ -491,7 +499,7 @@ function contextualEvidence(s,segment){
 }
 function triageRanking(s,segment='main'){
  const t=ensureTriage(s),e=contextualEvidence(s,segment),vetoSet=new Set();
- for(const r of t.rounds.filter(x=>x.context===segment))for(const id of r.rejected||[])vetoSet.add(id);
+ for(const r of t.rounds.filter(x=>x.context===segment)){for(const id of r.rejected||[])vetoSet.add(id);if(r.winner&&r.endurance==='no')vetoSet.add(r.winner);}
  const ranks=s.catalog.map(p=>{
   const d=e.get(p.id)||{id:p.id,points:0,wins:0,endorse:0,rejections:0,uses:0,known:0,details:[]};
   const status=!isAvailable(p,segment)?'excluded':vetoSet.has(p.id)?'context-out':d.wins>0||d.uses>0||d.points>0?'competitive':d.known>0?'low-evidence':'unexplored';
@@ -535,7 +543,7 @@ function chooseEndurance(s,value){const t=ensureTriage(s);if(!t.pending||t.pendi
 function chooseDiscard(s,id){const t=ensureTriage(s),r=t.pending;if(!r||r.phase!=='discard')throw Error('Não há descarte pendente');if(id!=='none'&&id!=='unknown'&&(!r.group.includes(id)||id===r.winner))throw Error('Descarte inválido');return finishRound(s,{...r,rejected:id==='none'||id==='unknown'?[]:[id]});}
 function finishRound(s,r){const t=ensureTriage(s);t.rounds.push({...r,at:now()});t.pending=null;t.current=null;t.roundIndex++;t.queueOverrides={};return log(s,'triage_round',`${r.context}: +${r.winner||'sem escolha'}, fora: ${(r.rejected||[]).join(',')||'nenhum'}`);}
 function undoRound(s){const t=ensureTriage(s);if(t.pending){t.current={context:t.pending.context,group:[...t.pending.group],index:t.pending.index};t.pending=null;return log(s,'triage_undo','Etapa da rodada cancelada');}const last=t.rounds.pop();if(!last)return false;t.roundIndex=Math.max(0,t.roundIndex-1);t.current={context:last.context,group:[...last.group],index:last.index};t.queueOverrides={};log(s,'triage_undo',`Desfeita rodada ${last.index}`);return true;}
-function undoVeto(s,id,segment){const t=ensureTriage(s);let affected=0;for(const r of t.rounds){if(r.context!==segment||!r.rejected?.includes(id))continue;r.rejected=r.rejected.filter(x=>x!==id);affected++;}if(affected)log(s,'triage_reintegrated',`${segment}: ${id} (${affected} registros)`);return affected;}
+function undoVeto(s,id,segment){const t=ensureTriage(s);let affected=0;for(const r of t.rounds){if(r.context!==segment)continue;if(r.rejected?.includes(id)){r.rejected=r.rejected.filter(x=>x!==id);affected++;}if(r.winner===id&&r.endurance==='no'){r.endurance='unknown';affected++;}}if(affected)log(s,'triage_reintegrated',`${segment}: ${id} (${affected} registros)`);return affected;}
 function activateSignature(s,id,segment='main'){
  const candidate=triageRanking(s,segment).find(x=>x.id===id);if(!candidate||candidate.status!=='competitive'||candidate.points<=0)throw Error('Fragrância sem evidência positiva para essa assinatura');
  if(segment==='main'){if(s.signatures.main?.perfumeId&&s.signatures.main.perfumeId!==id)throw Error('Já existe uma assinatura principal ativa. Finalize ou altere-a conscientemente em Sucessão.');s.signatures.main={perfumeId:id,activatedAt:now(),manual:true};}
