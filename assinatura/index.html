@@ -77,6 +77,7 @@ const copy=o=>structuredClone(o);
 const isNum=v=>typeof v==='number' && Number.isFinite(v);
 function blankState(){return {
  schema:2, catalog:copy(CATALOG), answers:{}, comparisons:[], experiences:[],
+ journey:{ids:[],skipped:{},started:false,startedAt:null},quickUses:[],
  signatures:{main:null,queue:[],secondary:{},ended:[]},
  categories:copy(CONTEXTS), settings:{sufficientHours:5,diversity:'balanced'},
  audit:[{at:new Date().toISOString(),action:'initialization',detail:`${RAW_COUNT} entradas; ${CATALOG.length} distintas; duplicação da posição 137`}],
@@ -394,10 +395,11 @@ function guidedResults(s){const j=ensureJourney(s);return j.ids.map(id=>{
   const win=duel.filter(c=>c.winner===id).length,loss=duel.length-win;
   const score=core===null?null:core+(trials===null?0:(trials-core)*Math.min(.35,observations.length*.13))+Math.min(.2,Math.max(-.2,(win-loss)*.1));
   return {perfume:p,score,complete,questions:items.length,days:new Set(q.map(t=>t.date)).size,uses:q.length,duels:duel.length,validation:validationFor(s,id), discouraged:p.profile?.pleasure<=2||p.profile?.repetition<=2, reason:p.profile?.repetition<=2?'Você indicou que não deseja repeti-lo no cotidiano.':p.profile?.pleasure<=2?'Você não demonstra vontade de usá-lo.':null};
- }).sort((a,b)=>Number(b.complete)-Number(a.complete)||((b.score??-1)-(a.score??-1))||(b.questions-a.questions)||a.perfume.id.localeCompare(b.perfume.id));}
+ }).sort((a,b)=>Number(a.discouraged)-Number(b.discouraged)||Number(b.complete)-Number(a.complete)||((b.score??-1)-(a.score??-1))||(b.questions-a.questions)||a.perfume.id.localeCompare(b.perfume.id));}
 function candidatePair(s){const res=guidedResults(s).filter(x=>!x.discouraged&&!x.perfume.definitive&&!x.perfume.contextExclusions?.main&&x.perfume.remainingMl!==0);
   if(res.length<2)return null;const pool=[];for(let i=0;i<Math.min(7,res.length);i++)for(let k=i+1;k<Math.min(7,res.length);k++){
     const a=res[i],b=res[k],old=s.comparisons.filter(x=>x.context==='main'&&[x.a,x.b].includes(a.perfume.id)&&[x.a,x.b].includes(b.perfume.id));
+    if(old.some(x=>!x.winner))continue; // adiado conscientemente: não repetir duelo até haver novos dados
     const close=a.score!==null&&b.score!==null?Math.abs(a.score-b.score):0.5;
     pool.push({a:a.perfume,b:b.perfume,priority:2-close-old.length*3+(a.complete&&b.complete?1:0)});
   }return pool.sort((a,b)=>b.priority-a.priority||a.a.id.localeCompare(b.a.id))[0];}
