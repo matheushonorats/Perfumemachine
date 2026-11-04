@@ -1,9 +1,9 @@
 {
   "name": "ASSINATURA — identidade olfativa",
   "short_name": "ASSINATURA",
-  "description": "Identidade olfativa pessoal com avaliações e sucessão",
+  "description": "Triagem guiada e sucessão de fragrâncias do acervo pessoal",
   "lang": "pt-BR",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f6f4ef",
@@ -13,7 +13,7 @@
       "src": "./icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
