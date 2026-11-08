@@ -376,7 +376,7 @@ function logAudit(st, action, detail) {
 }
 
 // ==========================================
-// 2. INTELLIGENT CONNECTION ENGINE (LIGAÇÃO INTELIGENTE)
+// 2. INTELLIGENT OLFACTORY CONNECTION ENGINE
 // Real Jaccard & weighted note/accord calculations
 // ==========================================
 function jaccardIndex(arrA, arrB) {
@@ -398,17 +398,29 @@ function noteOverlapScore(pyrA, pyrB) {
 }
 
 function computeSimilarity(pA, pB) {
-  if (!pA || !pB || pA.id === pB.id) return 0;
+  if (!pA || !pB) return 0;
+  if (pA.id && pB.id && pA.id === pB.id) return 0;
   const accordSim = jaccardIndex(pA.accords, pB.accords);
   const noteSim = noteOverlapScore(pA.pyramid, pB.pyramid);
   const familySim = (pA.family && pB.family && (pA.family === pB.family || pA.family.split(' ')[0] === pB.family.split(' ')[0])) ? 1 : 0;
   return (accordSim * 0.50) + (noteSim * 0.35) + (familySim * 0.15);
 }
 
+function generatePerfumeId(catalog) {
+  let max = 0;
+  for (const p of (catalog || [])) {
+    const num = parseInt(String(p.id).replace(/[^0-9]/g, ''), 10);
+    if (!isNaN(num) && num > max) max = num;
+  }
+  return 'f' + String(max + 1).padStart(3, '0');
+}
+
 // Compute the 3-axis relief orbit for a given target perfume
 function calculateReliefOrbit(targetPerfume, catalog) {
-  if (!targetPerfume) return { harmonic: null, detox: null, contrast: null };
-  const pool = catalog.filter(p => p.id !== targetPerfume.id && !p.definitive && p.remainingMl > 0);
+  if (!targetPerfume || !Array.isArray(catalog) || !catalog.length) {
+    return { harmonic: null, detox: null, contrast: null };
+  }
+  const pool = catalog.filter(p => p.id !== targetPerfume.id && !p.definitive && (p.remainingMl === undefined || p.remainingMl > 0));
   if (!pool.length) return { harmonic: null, detox: null, contrast: null };
 
   // 1. Harmonic Variation (Mesmo DNA): highest similarity
@@ -419,7 +431,8 @@ function calculateReliefOrbit(targetPerfume, catalog) {
   const harmonic = rankedHarmonic[0] || null;
 
   // 2. Sensory Detox (Neutral, clean, low intensity)
-  const detoxCandidates = pool.filter(p => {
+  const detoxPool = pool.filter(p => !harmonic || p.id !== harmonic.perfume.id);
+  const detoxCandidates = (detoxPool.length ? detoxPool : pool).filter(p => {
     const isLowIntensity = (p.intensity || 2) <= 2;
     const isClean = (p.accords || []).some(a => 
       /almiscar|limpo|citrico|cha|herbal|mineral|segunda pele/i.test(a)
@@ -428,19 +441,22 @@ function calculateReliefOrbit(targetPerfume, catalog) {
   }).map(p => ({
     perfume: p,
     similarity: computeSimilarity(targetPerfume, p)
-  })).sort((a, b) => a.similarity - b.similarity); // lowest similarity gives best olfactory reset
-  const detox = detoxCandidates[0] || rankedHarmonic[rankedHarmonic.length - 1];
+  })).sort((a, b) => a.similarity - b.similarity);
+  const detox = detoxCandidates[0] || 
+    (detoxPool.length ? { perfume: detoxPool[detoxPool.length - 1], similarity: computeSimilarity(targetPerfume, detoxPool[detoxPool.length - 1]) } : rankedHarmonic[rankedHarmonic.length - 1]);
 
-  // 3. Intentional Contrast: distinct olfactory family, low similarity (<0.25)
-  const contrastCandidates = pool.filter(p => {
+  // 3. Intentional Contrast: distinct olfactory family, low similarity (<0.35)
+  const contrastPool = pool.filter(p => (!harmonic || p.id !== harmonic.perfume.id) && (!detox || p.id !== detox.perfume.id));
+  const contrastCandidates = (contrastPool.length ? contrastPool : pool).filter(p => {
     const sim = computeSimilarity(targetPerfume, p);
     const diffFamily = p.family !== targetPerfume.family;
-    return diffFamily && sim < 0.25;
+    return diffFamily && sim < 0.35;
   }).map(p => ({
     perfume: p,
     similarity: computeSimilarity(targetPerfume, p)
   })).sort((a, b) => (b.perfume.intensity || 3) - (a.perfume.intensity || 3));
-  const contrast = contrastCandidates[0] || rankedHarmonic[rankedHarmonic.length - 1];
+  const contrast = contrastCandidates[0] || 
+    (contrastPool.length ? { perfume: contrastPool[0], similarity: computeSimilarity(targetPerfume, contrastPool[0]) } : rankedHarmonic[rankedHarmonic.length - 1]);
 
   return { harmonic, detox, contrast };
 }
@@ -448,19 +464,19 @@ function calculateReliefOrbit(targetPerfume, catalog) {
 // Suitability for the 4 dedicated contexts
 function getContextScore(p, contextId) {
   let score = 0;
-  const accords = (p.accords || []).join(' ').toLowerCase();
-  const seasons = (p.seasons || []).join(' ').toLowerCase();
-  const occasions = (p.occasions || []).join(' ').toLowerCase();
-  const family = (p.family || '').toLowerCase();
+  const accords = (p.accords || []).join(' ').toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+  const seasons = (p.seasons || []).join(' ').toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+  const occasions = (p.occasions || []).join(' ').toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+  const family = (p.family || '').toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
   const intensity = p.intensity || 3;
 
   if (contextId === 'heat') {
-    if (seasons.includes('verao')) score += 30;
+    if (seasons.includes('verao') || seasons.includes('summer')) score += 30;
     if (occasions.includes('calor')) score += 25;
     if (/citrico|aquatico|marinho|fresco|gelado|menta|salgado/.test(accords)) score += 35;
     if (/baunilha|couro|tabaco|caramelo|doce|canela/.test(accords) && intensity >= 4) score -= 30;
   } else if (contextId === 'cold') {
-    if (seasons.includes('inverno') || seasons.includes('outono')) score += 30;
+    if (seasons.includes('inverno') || seasons.includes('outono') || seasons.includes('winter') || seasons.includes('autumn')) score += 30;
     if (occasions.includes('frio')) score += 25;
     if (/baunilha|tabaco|especiado quente|ambar|couro|canela|esfumado/.test(accords)) score += 35;
     if (intensity >= 4) score += 15;
@@ -479,38 +495,288 @@ function getContextScore(p, contextId) {
 }
 
 function getRankedForContext(contextId, catalog) {
-  return catalog
-    .filter(p => !p.definitive && p.remainingMl > 0)
+  return (catalog || [])
+    .filter(p => !p.definitive && (p.remainingMl === undefined || p.remainingMl > 0))
     .map(p => ({ perfume: p, score: getContextScore(p, contextId) }))
     .sort((a, b) => b.score - a.score);
 }
 
 // ==========================================
-// 3. LIVE ONLINE DATABASE INTEGRATION (SCENTO API)
+// 3. LIVE ONLINE DATABASE INTEGRATION & FACTUAL TAXONOMY
 // ==========================================
+const ACCORD_TRANSLATIONS = {
+  'citrusy': 'Cítrico',
+  'citrus': 'Cítrico',
+  'woody': 'Amadeirado',
+  'wood': 'Amadeirado',
+  'fresh': 'Fresco',
+  'fresh spicy': 'Especiado Fresco',
+  'spicy': 'Especiado',
+  'warm': 'Especiado Quente',
+  'warm spicy': 'Especiado Quente',
+  'amber': 'Âmbar',
+  'ambery': 'Âmbar',
+  'sweet': 'Doce',
+  'fruity': 'Frutado',
+  'floral': 'Floral',
+  'white floral': 'Floral Branco',
+  'yellow floral': 'Floral',
+  'herbal': 'Herbal',
+  'aromatic': 'Aromático',
+  'earthy': 'Terroso',
+  'leathery': 'Couro',
+  'leather': 'Couro',
+  'smoky': 'Esfumado',
+  'smoke': 'Esfumado',
+  'powdery': 'Atalcado',
+  'aquatic': 'Aquático',
+  'marine': 'Marinho',
+  'salty': 'Marinho / Salgado',
+  'musky': 'Almiscarado',
+  'musk': 'Almiscarado',
+  'clean': 'Limpo',
+  'green': 'Verde',
+  'vanilla': 'Baunilha',
+  'gourmand': 'Gourmand',
+  'animalic': 'Animálico',
+  'balsamic': 'Balsâmico',
+  'tobacco': 'Tabaco',
+  'boozy': 'Alcoólico / Licoroso',
+  'soapy': 'Sabonete / Limpo',
+  'mossy': 'Musgoso'
+};
+
+const FAMILY_TRANSLATIONS = {
+  'sunlit citrus': 'Cítrico Aromático',
+  'wood & root': 'Amadeirado Especiado',
+  'spice route': 'Especiado Oriental',
+  'orchard fruit': 'Frutado Floral',
+  'floral meadow': 'Floral Nobre',
+  'amber resin': 'Âmbar Oriental',
+  'fresh water': 'Aquático Marinho',
+  'ocean spray': 'Aquático Fresco',
+  'leather & smoke': 'Couro Esfumado',
+  'aromatic fougère': 'Aromático Fougère',
+  'citrus': 'Cítrico',
+  'woody': 'Amadeirado',
+  'oriental': 'Oriental',
+  'aromatic': 'Aromático',
+  'floral': 'Floral',
+  'aquatic': 'Aquático',
+  'fougère': 'Aromático Fougère'
+};
+
+const NOTE_TRANSLATIONS = {
+  'bergamot': 'Bergamota',
+  'lemon': 'Limão',
+  'lime': 'Limão Tahiti',
+  'mandarin': 'Mandarina',
+  'grapefruit': 'Toranja',
+  'orange': 'Laranja',
+  'blood orange': 'Laranja Sanguínea',
+  'bitter orange': 'Laranja Amarga',
+  'petitgrain': 'Petitgrain',
+  'neroli': 'Néroli',
+  'apple': 'Maçã',
+  'green apple': 'Maçã Verde',
+  'pineapple': 'Abacaxi',
+  'blackcurrant': 'Groselha Preta',
+  'black currant': 'Groselha Preta',
+  'peach': 'Pêssego',
+  'melon': 'Melão',
+  'pepper': 'Pimenta',
+  'black pepper': 'Pimenta Preta',
+  'pink pepper': 'Pimenta Rosa',
+  'sichuan pepper': 'Pimenta de Sichuan',
+  'cardamom': 'Cardamomo',
+  'cinnamon': 'Canela',
+  'clove': 'Cravo-da-Índia',
+  'nutmeg': 'Noz-moscada',
+  'ginger': 'Gengibre',
+  'star anise': 'Anis-estrelado',
+  'lavender': 'Lavanda',
+  'geranium': 'Gerânio',
+  'mint': 'Menta / Hortelã',
+  'rosemary': 'Alecrim',
+  'sage': 'Sálvia',
+  'clary sage': 'Sálvia Esclareia',
+  'basil': 'Manjericão',
+  'thyme': 'Tomilho',
+  'juniper berries': 'Bagas de Zimbro',
+  'rose': 'Rosa',
+  'jasmine': 'Jasmim',
+  'iris': 'Íris',
+  'orris': 'Raiz de Orris',
+  'violet': 'Violeta',
+  'orange blossom': 'Flor de Laranjeira',
+  'tuberose': 'Tuberosa',
+  'lily': 'Lírio',
+  'cedarwood': 'Cedro',
+  'cedar': 'Cedro',
+  'sandalwood': 'Sândalo',
+  'patchouli': 'Patchouli',
+  'vetiver': 'Vetiver',
+  'guaiac wood': 'Madeira Guaiac',
+  'birch': 'Bétula',
+  'oakmoss': 'Musgo de Carvalho',
+  'pine': 'Pinho',
+  'amber': 'Âmbar',
+  'amberwood': 'Madeira de Âmbar',
+  'ambroxan': 'Ambroxan',
+  'musk': 'Almíscar',
+  'white musk': 'Almíscar Branco',
+  'vanilla': 'Baunilha',
+  'tonka bean': 'Fava Tonka',
+  'benzoin': 'Benjoim',
+  'incense': 'Incenso',
+  'leather': 'Couro',
+  'tobacco': 'Tabaco',
+  'rum': 'Rum',
+  'coffee': 'Café',
+  'sea notes': 'Notas Aquáticas',
+  'calone': 'Calone / Ozônico'
+};
+
+const SEASON_TRANSLATIONS = {
+  'spring': 'primavera',
+  'summer': 'verao',
+  'autumn': 'outono',
+  'fall': 'outono',
+  'winter': 'inverno'
+};
+
+function translateToken(dict, val) {
+  if (!val) return '';
+  const key = String(val).toLowerCase().trim();
+  return dict[key] || (val.charAt(0).toUpperCase() + val.slice(1));
+}
+
+function normalizeScentoDetails(d, slugOrMatch) {
+  const brand = d.house || slugOrMatch.house || 'Desconhecida';
+  const name = d.name || slugOrMatch.name || 'Fragrância Sem Nome';
+  const rawFam = (d.family || slugOrMatch.family || '').toLowerCase();
+  const family = FAMILY_TRANSLATIONS[rawFam] || (d.family || slugOrMatch.family || 'Amadeirado');
+  
+  let rawAccords = d.character_words || [];
+  if (!rawAccords.length && d.family) rawAccords = [d.family];
+  const accords = rawAccords.map(a => translateToken(ACCORD_TRANSLATIONS, a));
+  if (!accords.length) accords.push('Amadeirado', 'Cítrico');
+
+  let top = [], heart = [], base = [];
+  if (d.pyramid?.top?.length || d.pyramid?.heart?.length || d.pyramid?.base?.length) {
+    top = (d.pyramid.top || []).map(n => translateToken(NOTE_TRANSLATIONS, n));
+    heart = (d.pyramid.heart || []).map(n => translateToken(NOTE_TRANSLATIONS, n));
+    base = (d.pyramid.base || []).map(n => translateToken(NOTE_TRANSLATIONS, n));
+  } else if (Array.isArray(d.notes) && d.notes.length) {
+    const trNotes = d.notes.map(n => translateToken(NOTE_TRANSLATIONS, n));
+    if (trNotes.length === 1) {
+      top = trNotes;
+      heart = ['Notas aromáticas'];
+      base = ['Madeiras nobres'];
+    } else if (trNotes.length === 2) {
+      top = [trNotes[0]];
+      heart = ['Acorde fresco'];
+      base = [trNotes[1]];
+    } else if (trNotes.length === 3) {
+      top = [trNotes[0]];
+      heart = [trNotes[1]];
+      base = [trNotes[2]];
+    } else {
+      const chunk = Math.ceil(trNotes.length / 3);
+      top = trNotes.slice(0, chunk);
+      heart = trNotes.slice(chunk, chunk * 2);
+      base = trNotes.slice(chunk * 2);
+    }
+  }
+
+  const rawSeasons = d.wears?.seasons || ['spring', 'summer', 'autumn'];
+  const seasons = rawSeasons.map(s => SEASON_TRANSLATIONS[s.toLowerCase()] || s);
+
+  let occasions = ['cotidiano'];
+  const hours = d.wears?.hours || [];
+  if (hours.includes('evening') || hours.includes('night')) occasions.push('noite', 'social');
+  if (hours.includes('day')) occasions.push('trabalho');
+
+  let intensity = 3;
+  const conc = (d.concentration || 'EDP').toUpperCase();
+  if (conc.includes('EXTRAIT') || conc.includes('PARFUM')) intensity = 4;
+  else if (conc.includes('COLONIA') || conc.includes('EDC')) intensity = 1;
+  else if (conc.includes('EDT')) intensity = 2;
+
+  return {
+    brand,
+    name,
+    concentration: d.concentration ? d.concentration.toUpperCase() : 'EDP',
+    family,
+    accords,
+    pyramid: { top, heart, base },
+    seasons,
+    occasions,
+    intensity,
+    character: d.character || (family + ' com acordes de ' + accords.slice(0, 3).join(', ') + '.')
+  };
+}
+
 async function searchOnlineDatabase(query) {
   if (!query || !query.trim()) return [];
-  const url = 'https://www.scento.com/api/perfume/v1/search?q=' + encodeURIComponent(query.trim()) + '&kind=perfume';
+  const qClean = query.trim();
+  const qNorm = qClean.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  // 1. Search local verified factual database
+  const localMatches = Object.values(FACTUAL_DB).filter(p => {
+    const full = (p.brand + ' ' + p.name + ' ' + (p.family || '')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return full.includes(qNorm);
+  }).map(p => ({
+    name: p.name,
+    house: p.brand,
+    family: p.family,
+    badge: 'Verificado (Fragrantica/Parfumo)',
+    page: null,
+    localData: p
+  }));
+
+  // 2. Query online Scento API in parallel
+  let onlineMatches = [];
   try {
+    const url = 'https://www.scento.com/api/perfume/v1/search?q=' + encodeURIComponent(qClean) + '&kind=perfume';
     const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
-    if (!res.ok) throw new Error('Status ' + res.status);
-    const data = await res.json();
-    return (data?.detail?.matches || []).filter(m => m.kind === 'perfume');
+    if (res.ok) {
+      const data = await res.json();
+      const rawOnline = (data?.detail?.matches || []).filter(m => m.kind === 'perfume');
+      onlineMatches = rawOnline.map(m => ({
+        name: m.name,
+        house: m.house,
+        family: translateToken(FAMILY_TRANSLATIONS, m.family || 'Amadeirado'),
+        badge: 'Online (Scento Global)',
+        page: m.page,
+        localData: null
+      }));
+    }
   } catch(e) {
-    console.warn('Erro ao consultar API Scento:', e);
-    // Fallback: search local verified database
-    const q = query.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-    return Object.values(FACTUAL_DB).filter(p => {
-      const target = (p.brand + ' ' + p.name).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
-      return target.includes(q);
-    }).map(p => ({
-      name: p.name,
-      house: p.brand,
-      family: p.family,
-      page: null,
-      localData: p
-    }));
+    console.warn('Consulta online indisponível ou offline:', e);
   }
+
+  // 3. Merge & deduplicate
+  const seen = new Set();
+  const merged = [];
+
+  for (const m of localMatches) {
+    const key = (m.house + ' ' + m.name).toLowerCase().trim();
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(m);
+    }
+  }
+
+  for (const m of onlineMatches) {
+    const key = (m.house + ' ' + m.name).toLowerCase().trim();
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(m);
+    }
+  }
+
+  return merged;
 }
 
 async function fetchOnlinePerfumeDetails(slugOrMatch) {
@@ -523,21 +789,7 @@ async function fetchOnlinePerfumeDetails(slugOrMatch) {
     const res = await fetch('https://www.scento.com/api/perfume/v1/perfumes/' + encodeURIComponent(slug));
     if (!res.ok) throw new Error('Status ' + res.status);
     const folio = await res.json();
-    const d = folio.detail;
-    return {
-      brand: d.house || slugOrMatch.house,
-      name: d.name || slugOrMatch.name,
-      concentration: d.concentration || 'EDP',
-      family: d.family || 'Amadeirado',
-      accords: d.character_words || ['Amadeirado', 'Cítrico'],
-      pyramid: {
-        top: d.pyramid?.top || [],
-        heart: d.pyramid?.heart || [],
-        base: d.pyramid?.base || []
-      },
-      seasons: d.wears?.seasons || ['primavera', 'verao'],
-      character: d.character || ''
-    };
+    return normalizeScentoDetails(folio.detail, slugOrMatch);
   } catch(e) {
     console.warn('Falha ao buscar perfil completo no Scento:', e);
     return null;
@@ -545,7 +797,6 @@ async function fetchOnlinePerfumeDetails(slugOrMatch) {
 }
 </script>
 <script>
-// ==========================================
 // 4. APPLICATION UI CONTROLLER
 // ==========================================
 let state = blankState();
@@ -561,6 +812,36 @@ let onlineSearching = false;
 let toastMessage = '';
 let toastTimeout = null;
 
+let addFormData = {
+  brand: '',
+  name: '',
+  concentration: 'EDP',
+  family: 'Amadeirado Aromático',
+  bottleMl: 100,
+  remainingMl: 100,
+  accords: '',
+  topNotes: '',
+  heartNotes: '',
+  baseNotes: '',
+  character: ''
+};
+
+function resetAddFormData() {
+  addFormData = {
+    brand: '',
+    name: '',
+    concentration: 'EDP',
+    family: 'Amadeirado Aromático',
+    bottleMl: 100,
+    remainingMl: 100,
+    accords: '',
+    topNotes: '',
+    heartNotes: '',
+    baseNotes: '',
+    character: ''
+  };
+}
+
 function flashToast(msg) {
   toastMessage = msg;
   renderApp();
@@ -568,7 +849,7 @@ function flashToast(msg) {
   toastTimeout = setTimeout(() => {
     toastMessage = '';
     const t = document.querySelector('.toast');
-    if (t) t.remove();
+    if (t && typeof t.remove === 'function') t.remove();
   }, 4200);
 }
 
@@ -601,6 +882,10 @@ function switchTab(t) {
 function renderApp() {
   const root = document.querySelector('#app');
   if (!root) return;
+
+  const activeElId = document.activeElement?.id;
+  const selStart = document.activeElement?.selectionStart;
+  const selEnd = document.activeElement?.selectionEnd;
 
   const mainPerfume = getPerfume(state.signatures.main?.perfumeId);
   const orbit = calculateReliefOrbit(mainPerfume, state.catalog);
@@ -707,14 +992,23 @@ function renderMainContent(mainPerfume, orbit) {
 // TAB 1: HOME & RELIEF ORBIT
 // ==========================================
 function renderHomeTab(main, orbit) {
+  const hasMain = Boolean(main);
   const p = main || {
+    id: null,
     brand: 'Nenhuma assinatura ativa',
     name: 'Selecione uma fragrância da sua coleção',
-    family: 'Amadeirado / Cítrico',
+    family: 'Sem família definida',
     accords: ['Toque em Escolher para ativar'],
     pyramid: { top: [], heart: [], base: [] },
-    remainingMl: 0
+    remainingMl: 0,
+    concentration: '—',
+    character: 'Ative um perfume do seu acervo para iniciar sua identidade e órbita de alívio.'
   };
+
+  const heatRanked = getRankedForContext('heat', state.catalog).filter(x => x.perfume.id !== state.signatures.secondary?.heat);
+  const coldRanked = getRankedForContext('cold', state.catalog).filter(x => x.perfume.id !== state.signatures.secondary?.cold);
+  const profRanked = getRankedForContext('professional', state.catalog).filter(x => x.perfume.id !== state.signatures.secondary?.professional);
+  const nightRanked = getRankedForContext('night', state.catalog).filter(x => x.perfume.id !== state.signatures.secondary?.night);
 
   return \`
   <div class="page-heading">
@@ -988,6 +1282,21 @@ function renderCollectionTab() {
 function renderOrbitsTab() {
   const targetId = activeDetailId || state.signatures.main?.perfumeId || state.catalog[0]?.id;
   const current = getPerfume(targetId);
+
+  if (!current) {
+    return \`
+    <div class="page-heading">
+      <div class="eyebrow"><span class="dot"></span>RADAR DE LIGAÇÕES INTELIGENTES</div>
+      <h1>Mapa de Afinidade Olfativa</h1>
+      <p class="lede">Nenhuma fragrância selecionada ou o acervo está vazio.</p>
+    </div>
+    <div class="surface padded" style="text-align:center;padding:48px 24px">
+      <p style="color:var(--muted);font-size:14px;margin-bottom:16px">Seu acervo não possui perfumes cadastrados ou o perfume ativo foi removido.</p>
+      <button class="btn primary" onclick="openAddModal()">+ Adicionar Nova Fragrância</button>
+    </div>
+    \`;
+  }
+
   const orbit = calculateReliefOrbit(current, state.catalog);
 
   return \`
@@ -1256,64 +1565,64 @@ function renderActiveModal() {
             <div class="form-grid" style="margin-top:12px">
               <div class="field">
                 <label>Marca / Casa *</label>
-                <input id="add-brand" name="brand" required placeholder="Ex.: Chanel, Dior, Natura">
+                <input id="add-brand" name="brand" required placeholder="Ex.: Chanel, Dior, Natura" value="\${escapeHtml(addFormData.brand)}" oninput="addFormData.brand=this.value">
               </div>
               <div class="field">
                 <label>Nome do Perfume *</label>
-                <input id="add-name" name="name" required placeholder="Ex.: Bleu de Chanel Parfum">
+                <input id="add-name" name="name" required placeholder="Ex.: Bleu de Chanel Parfum" value="\${escapeHtml(addFormData.name)}" oninput="addFormData.name=this.value">
               </div>
             </div>
 
             <div class="form-grid">
               <div class="field">
                 <label>Concentração</label>
-                <select id="add-concentration" name="concentration">
-                  <option value="EDT">EDT (Eau de Toilette)</option>
-                  <option value="EDP" selected>EDP (Eau de Parfum)</option>
-                  <option value="Parfum">Parfum / Extrait</option>
-                  <option value="EDC">EDC (Colônia / Deo Colônia)</option>
+                <select id="add-concentration" name="concentration" onchange="addFormData.concentration=this.value">
+                  <option value="EDT" \${addFormData.concentration==='EDT'?'selected':''}>EDT (Eau de Toilette)</option>
+                  <option value="EDP" \${addFormData.concentration==='EDP'?'selected':''}>EDP (Eau de Parfum)</option>
+                  <option value="Parfum" \${addFormData.concentration==='Parfum'?'selected':''}>Parfum / Extrait</option>
+                  <option value="EDC" \${addFormData.concentration==='EDC'?'selected':''}>EDC (Colônia / Deo Colônia)</option>
                 </select>
               </div>
               <div class="field">
                 <label>Família Olfativa</label>
-                <input id="add-family" name="family" placeholder="Ex.: Amadeirado Cítrico, Oriental Especiado" value="Amadeirado Aromático">
+                <input id="add-family" name="family" placeholder="Ex.: Amadeirado Cítrico, Oriental Especiado" value="\${escapeHtml(addFormData.family)}" oninput="addFormData.family=this.value">
               </div>
             </div>
 
             <div class="form-grid">
               <div class="field">
                 <label>Volume do frasco (ml)</label>
-                <input type="number" id="add-bottleMl" name="bottleMl" value="100" min="5" max="500">
+                <input type="number" id="add-bottleMl" name="bottleMl" value="\${addFormData.bottleMl || 100}" min="5" max="500" oninput="addFormData.bottleMl=Number(this.value)">
               </div>
               <div class="field">
                 <label>Volume restante (ml)</label>
-                <input type="number" id="add-remainingMl" name="remainingMl" value="100" min="0" max="500">
+                <input type="number" id="add-remainingMl" name="remainingMl" value="\${addFormData.remainingMl !== undefined ? addFormData.remainingMl : 100}" min="0" max="500" oninput="addFormData.remainingMl=Number(this.value)">
               </div>
             </div>
 
             <div class="field">
               <label>Acordes Principais (separados por vírgula)</label>
-              <input id="add-accords" name="accords" placeholder="Ex.: Cítrico, Amadeirado, Âmbar, Especiado Fresco">
+              <input id="add-accords" name="accords" placeholder="Ex.: Cítrico, Amadeirado, Âmbar, Especiado Fresco" value="\${escapeHtml(addFormData.accords)}" oninput="addFormData.accords=this.value">
             </div>
 
             <div class="field">
               <label>Notas de Topo (separadas por vírgula)</label>
-              <input id="add-top-notes" name="topNotes" placeholder="Ex.: Bergamota, Limão, Toranja">
+              <input id="add-top-notes" name="topNotes" placeholder="Ex.: Bergamota, Limão, Toranja" value="\${escapeHtml(addFormData.topNotes)}" oninput="addFormData.topNotes=this.value">
             </div>
 
             <div class="field">
               <label>Notas de Coração (separadas por vírgula)</label>
-              <input id="add-heart-notes" name="heartNotes" placeholder="Ex.: Lavanda, Gengibre, Pimenta">
+              <input id="add-heart-notes" name="heartNotes" placeholder="Ex.: Lavanda, Gengibre, Pimenta" value="\${escapeHtml(addFormData.heartNotes)}" oninput="addFormData.heartNotes=this.value">
             </div>
 
             <div class="field">
               <label>Notas de Fundo (separadas por vírgula)</label>
-              <input id="add-base-notes" name="baseNotes" placeholder="Ex.: Cedro, Vetiver, Âmbar, Patchouli">
+              <input id="add-base-notes" name="baseNotes" placeholder="Ex.: Cedro, Vetiver, Âmbar, Patchouli" value="\${escapeHtml(addFormData.baseNotes)}" oninput="addFormData.baseNotes=this.value">
             </div>
 
             <div class="field">
               <label>Descrição olfativa / Notas livres</label>
-              <textarea id="add-character" name="character" rows="2" placeholder="Sensações, ocasiões recomendadas ou estilo"></textarea>
+              <textarea id="add-character" name="character" rows="2" placeholder="Sensações, ocasiões recomendadas ou estilo" oninput="addFormData.character=this.value">\${escapeHtml(addFormData.character)}</textarea>
             </div>
 
             <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px">
@@ -1481,6 +1790,7 @@ function closeModal() {
 
 // Modal open handlers
 function openAddModal() {
+  resetAddFormData();
   activeModal = 'addPerfume';
   onlineSearchQuery = '';
   onlineSearchResults = [];
@@ -1528,52 +1838,46 @@ async function executeOnlineSearch() {
 
 async function applyOnlineMatchToForm(m) {
   const details = await fetchOnlinePerfumeDetails(m);
-  if (!details) return;
-  const brandInp = document.querySelector('#add-brand');
-  const nameInp = document.querySelector('#add-name');
-  const familyInp = document.querySelector('#add-family');
-  const concentrationInp = document.querySelector('#add-concentration');
-  const accordsInp = document.querySelector('#add-accords');
-  const topInp = document.querySelector('#add-top-notes');
-  const heartInp = document.querySelector('#add-heart-notes');
-  const baseInp = document.querySelector('#add-base-notes');
-  const charInp = document.querySelector('#add-character');
-
-  if (brandInp) brandInp.value = details.brand || m.house;
-  if (nameInp) nameInp.value = details.name || m.name;
-  if (familyInp) familyInp.value = details.family || m.family;
-  if (concentrationInp) concentrationInp.value = details.concentration || 'EDP';
-  if (accordsInp) accordsInp.value = (details.accords || []).join(', ');
-  if (topInp) topInp.value = (details.pyramid?.top || []).join(', ');
-  if (heartInp) heartInp.value = (details.pyramid?.heart || []).join(', ');
-  if (baseInp) baseInp.value = (details.pyramid?.base || []).join(', ');
-  if (charInp) charInp.value = details.character || '';
-  flashToast('Dados de ' + (details.name || m.name) + ' preenchidos da base online!');
+  if (!details) {
+    flashToast('Não foi possível carregar os dados desta fragrância.');
+    return;
+  }
+  addFormData.brand = details.brand || m.house || '';
+  addFormData.name = details.name || m.name || '';
+  addFormData.family = details.family || m.family || 'Amadeirado Aromático';
+  addFormData.concentration = details.concentration || 'EDP';
+  addFormData.accords = (details.accords || []).join(', ');
+  addFormData.topNotes = (details.pyramid?.top || []).join(', ');
+  addFormData.heartNotes = (details.pyramid?.heart || []).join(', ');
+  addFormData.baseNotes = (details.pyramid?.base || []).join(', ');
+  addFormData.character = details.character || '';
+  renderApp();
+  flashToast('Dados de ' + (details.name || m.name) + ' preenchidos no formulário!');
 }
 
 async function importFromOnlineSearch(m) {
   const details = await fetchOnlinePerfumeDetails(m);
-  const nextNum = state.catalog.length + 1;
+  const id = generatePerfumeId(state.catalog);
   const newPerfume = {
-    id: 'f' + String(nextNum).padStart(3, '0'),
+    id,
     brand: details?.brand || m.house,
     name: details?.name || m.name,
     concentration: details?.concentration || 'EDP',
-    family: details?.family || m.family || 'Amadeirado',
-    accords: details?.accords || ['Cítrico', 'Amadeirado'],
+    family: details?.family || m.family || 'Amadeirado Aromático',
+    accords: (details?.accords && details.accords.length) ? details.accords : ['Cítrico', 'Amadeirado'],
     pyramid: details?.pyramid || { top: [], heart: [], base: [] },
     seasons: details?.seasons || ['primavera', 'outono'],
-    occasions: ['cotidiano'],
-    intensity: 3,
+    occasions: details?.occasions || ['cotidiano'],
+    intensity: details?.intensity || 3,
     character: details?.character || '',
     remainingMl: 100,
     bottleMl: 100,
     favorite: false,
-    sources: [{ name: 'Scento Online Database', verified: true }]
+    sources: [{ name: m.localData ? 'Base Factual Verificada (Fragrantica/Parfumo)' : 'Scento Online Database (Normalizado)', verified: true }]
   };
   state.catalog.unshift(newPerfume);
   await persist('perfume_imported_online', newPerfume.brand + ' — ' + newPerfume.name);
-  flashToast(newPerfume.name + ' adicionado ao acervo via banco online!');
+  flashToast(newPerfume.name + ' adicionado ao acervo com dados olfativos verificados!');
   switchTab('collection');
 }
 
@@ -1581,39 +1885,42 @@ async function importFromOnlineSearch(m) {
 async function submitAddPerfume(e) {
   e.preventDefault();
   const form = e.target;
-  const brand = form.brand.value.trim();
-  const name = form.name.value.trim();
-  if (!brand || !name) return;
+  const brand = (form.brand?.value || addFormData.brand || '').trim();
+  const name = (form.name?.value || addFormData.name || '').trim();
+  if (!brand || !name) {
+    alert('Por favor, informe a marca e o nome do perfume.');
+    return;
+  }
 
-  const nextNum = state.catalog.length + 1;
-  const id = 'f' + String(nextNum).padStart(3, '0');
-  const accords = form.accords.value.split(',').map(s => s.trim()).filter(Boolean);
-  const top = form.topNotes.value.split(',').map(s => s.trim()).filter(Boolean);
-  const heart = form.heartNotes.value.split(',').map(s => s.trim()).filter(Boolean);
-  const base = form.baseNotes.value.split(',').map(s => s.trim()).filter(Boolean);
+  const id = generatePerfumeId(state.catalog);
+  const accords = (form.accords?.value || addFormData.accords || '').split(',').map(s => s.trim()).filter(Boolean);
+  const top = (form.topNotes?.value || addFormData.topNotes || '').split(',').map(s => s.trim()).filter(Boolean);
+  const heart = (form.heartNotes?.value || addFormData.heartNotes || '').split(',').map(s => s.trim()).filter(Boolean);
+  const base = (form.baseNotes?.value || addFormData.baseNotes || '').split(',').map(s => s.trim()).filter(Boolean);
 
   const newP = {
     id,
     brand,
     name,
-    concentration: form.concentration.value,
-    family: form.family.value.trim() || 'Amadeirado',
-    accords,
+    concentration: form.concentration?.value || addFormData.concentration || 'EDP',
+    family: (form.family?.value || addFormData.family || 'Amadeirado Aromático').trim(),
+    accords: accords.length ? accords : ['Amadeirado', 'Cítrico'],
     pyramid: { top, heart, base },
     seasons: ['primavera', 'verao', 'outono'],
     occasions: ['cotidiano'],
     intensity: 3,
-    character: form.character.value.trim(),
-    bottleMl: Number(form.bottleMl.value) || 100,
-    remainingMl: Number(form.remainingMl.value) || 100,
+    character: (form.character?.value || addFormData.character || '').trim(),
+    bottleMl: Number(form.bottleMl?.value || addFormData.bottleMl) || 100,
+    remainingMl: Number(form.remainingMl?.value || addFormData.remainingMl) || 100,
     favorite: false,
-    sources: [{ name: 'Cadastrado pelo usuário', verified: true }]
+    sources: [{ name: 'Cadastrado pelo usuário no acervo', verified: true }]
   };
 
   state.catalog.unshift(newP);
+  resetAddFormData();
   closeModal();
   await persist('perfume_added', brand + ' — ' + name);
-  flashToast(brand + ' ' + name + ' adicionado com sucesso!');
+  flashToast(brand + ' ' + name + ' adicionado com sucesso ao seu acervo!');
 }
 
 async function executeRemovePerfume(id) {
@@ -1633,15 +1940,24 @@ async function executeRemovePerfume(id) {
     }
   }
 
-  // Clear secondary contexts if present
+  // Clear or promote secondary contexts
   for (const [ctx, sid] of Object.entries(state.signatures.secondary || {})) {
     if (sid === id) {
-      delete state.signatures.secondary[ctx];
+      const candidates = getRankedForContext(ctx, state.catalog).filter(x => x.perfume.id !== id);
+      if (candidates[0]?.perfume?.id) {
+        state.signatures.secondary[ctx] = candidates[0].perfume.id;
+      } else {
+        delete state.signatures.secondary[ctx];
+      }
     }
   }
 
   // Remove from queue
   state.signatures.queue = state.signatures.queue.filter(qId => qId !== id);
+
+  if (activeDetailId === id) {
+    activeDetailId = null;
+  }
 
   closeModal();
   await persist('perfume_removed', nameStr);

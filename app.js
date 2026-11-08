@@ -156,7 +156,44 @@ const store = {
   set(k,v){localStorage.setItem(k,JSON.stringify(v))}
 };
 
+let factualDb = null;
+try {
+  fetch('./assinatura/database.json').then(r => r.json()).then(data => { factualDb = data; }).catch(() => {});
+} catch(_) {}
+
+function findFactualProfile(name) {
+  if (!factualDb || !name) return null;
+  const q = name.toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+  return Object.values(factualDb).find(p => {
+    const full = (p.brand + ' ' + p.name).toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+    return full.includes(q) || q.includes(p.name.toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, ''));
+  }) || null;
+}
+
 function infer(name){
+  const factual = findFactualProfile(name);
+  if (factual) {
+    const fam = (factual.family || '').toLowerCase().normalize('NFD').replace(/[^a-z0-9 ]/g, '');
+    let family = 'amadeirado';
+    if (/citrico/.test(fam)) family = 'citrico';
+    else if (/aquatico|marinho/.test(fam)) family = 'aquatico';
+    else if (/aromatico|foug/.test(fam)) family = 'aromatico';
+    else if (/amadeirado/.test(fam)) family = 'amadeirado';
+    else if (/especiado/.test(fam)) family = 'especiado';
+    else if (/couro/.test(fam)) family = 'couro';
+    else if (/tabaco/.test(fam)) family = 'tabaco';
+    else if (/gourmand|doce|baunilha/.test(fam)) family = 'gourmand';
+    else if (/oriental|ambar/.test(fam)) family = 'ambarado';
+    else if (/vetiver/.test(fam)) family = 'vetiver';
+    else if (/fresco|floral/.test(fam)) family = 'fresco';
+
+    const intensity = Math.min(4, Math.max(1, factual.intensity || 2));
+    const fresh = ['citrico', 'aquatico', 'fresco', 'aromatico'].includes(family);
+    const warm = !fresh;
+    const moods = fresh?['energizado','leve','calmo']: family==='gourmand'||family==='tabaco'?['sedutor','confortavel','confiante']: family==='vetiver'||family==='couro'?['misterioso','confiante','elegante']:['elegante','confiante','equilibrado'];
+    return {family,intensity,warm,fresh,moods,factualVerified:true,active:true,favorite:false,uses:0,lastUsed:null};
+  }
+
   const n=name.toLowerCase(); let family='amadeirado', intensity=2, warm=true, fresh=false;
   if(/aqua|aquatica|cool water|light blue|ocean|ultra blue|polo blue|invictus|hawas|atlas/.test(n)){family='aquatico';fresh=true;warm=false}
   if(/verbena|bergamota|mandarin|limão|lemon|cedrat|citadel|eau sauvage|4711|happy|eros energy|zingy/.test(n)){family='citrico';fresh=true;warm=false}
@@ -230,7 +267,7 @@ $('#quickBtn').onclick=()=>{answers={occasion:'passeio',currentMood:'neutro',goa
 
 let filter='all';function renderCollection(){const q=$('#searchInput').value.toLowerCase();let arr=perfumes.filter(p=>p.name.toLowerCase().includes(q));if(filter==='favorite')arr=arr.filter(p=>p.favorite);if(filter==='active')arr=arr.filter(p=>p.active);if(filter==='hidden')arr=arr.filter(p=>!p.active);$('#collectionList').innerHTML=arr.length?arr.map(p=>`<div class="list-item"><div><strong>${p.name}</strong><div class="meta">${labelFamily(p.family)} • intensidade ${p.intensity}/4 • ${p.uses} uso(s)</div></div><div class="list-actions"><button class="mini fav" data-id="${p.id}">${p.favorite?'★':'☆'}</button><button class="mini edit" data-id="${p.id}">Editar</button><button class="mini danger del" data-id="${p.id}" title="Excluir">✕</button></div></div>`).join(''):'<div class="empty">Nenhum perfume encontrado.</div>';$$('.fav').forEach(b=>b.onclick=()=>{const p=perfumes.find(x=>x.id===b.dataset.id);p.favorite=!p.favorite;savePerfumes();renderCollection()});$$('.edit').forEach(b=>b.onclick=()=>openDialog(b.dataset.id));$$('.del').forEach(b=>b.onclick=()=>{const p=perfumes.find(x=>x.id===b.dataset.id);if(confirm(`Remover "${p.name}" da coleção?`)){perfumes=perfumes.filter(x=>x.id!==b.dataset.id);savePerfumes();renderCollection();}})}
 $('#searchInput').oninput=renderCollection;$$('.filter').forEach(b=>b.onclick=()=>{$$('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;renderCollection()});
-function openDialog(id=null){editId=id;const p=id?perfumes.find(x=>x.id===id):{name:'',family:'fresco',intensity:2,favorite:false,active:true};$('#dialogTitle').textContent=id?'Editar perfume':'Adicionar perfume';$('#perfumeName').value=p.name;$('#perfumeFamily').value=p.family;$('#perfumeIntensity').value=p.intensity;$('#perfumeFavorite').checked=p.favorite;$('#perfumeActive').checked=p.active;$('#perfumeDialog').showModal()}
+function openDialog(id=null){editId=id;const p=id?perfumes.find(x=>x.id===id):{name:'',family:'fresco',intensity:2,favorite:false,active:true};$('#dialogTitle').textContent=id?'Editar perfume':'Adicionar perfume';$('#perfumeName').value=p.name;$('#perfumeFamily').value=p.family;$('#perfumeIntensity').value=p.intensity;$('#perfumeFavorite').checked=p.favorite;$('#perfumeActive').checked=p.active;$('#perfumeName').oninput=()=>{if(!editId){const inf=infer($('#perfumeName').value);if(inf&&inf.factualVerified){$('#perfumeFamily').value=inf.family;$('#perfumeIntensity').value=String(inf.intensity);}}};$('#perfumeDialog').showModal()}
 $('#addPerfumeBtn').onclick=()=>openDialog();$('#perfumeForm').onsubmit=e=>{e.preventDefault();const data={name:$('#perfumeName').value.trim(),family:$('#perfumeFamily').value,intensity:Number($('#perfumeIntensity').value),favorite:$('#perfumeFavorite').checked,active:$('#perfumeActive').checked};if(editId){Object.assign(perfumes.find(x=>x.id===editId),data)}else{perfumes.push({id:crypto.randomUUID?.()||String(Date.now()),...infer(data.name),...data,uses:0,lastUsed:null})}savePerfumes();$('#perfumeDialog').close();renderCollection()};function savePerfumes(){store.set('perfumes',perfumes);updateCounts()}
 function renderHistory(){$('#historyList').innerHTML=history.length?history.map(h=>`<div class="list-item"><div><strong>${h.name}</strong><div class="meta">${new Date(h.date).toLocaleString('pt-BR')} • ${h.occasion||''}<br>${h.weather||''}</div></div></div>`).join(''):'<div class="empty">Você ainda não registrou nenhum uso.</div>'}
 $('#clearHistoryBtn').onclick=()=>{if(confirm('Apagar todo o histórico?')){history=[];store.set('history',history);renderHistory();updateCounts()}};
