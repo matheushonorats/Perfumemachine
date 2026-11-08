@@ -1,0 +1,5875 @@
+{
+  "1": {
+    "brand": "4711",
+    "name": "Original Eau de Cologne",
+    "concentration": "EDC",
+    "family": "Cítrico Aromático",
+    "accords": [
+      "Cítrico",
+      "Aromático",
+      "Especiado Fresco",
+      "Herbal",
+      "Floral Branco"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Bergamota",
+        "Laranja",
+        "Manjericão",
+        "Pêssego"
+      ],
+      "heart": [
+        "Jasmim",
+        "Lírio",
+        "Rosa Búlgara",
+        "Cyclamen",
+        "Melão"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Vetiver",
+        "Cedro",
+        "Patchouli",
+        "Sândalo",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "cotidiano",
+      "calor",
+      "casa",
+      "detox"
+    ],
+    "intensity": 1,
+    "character": "Clássico cítrico revigorante, ultra fresco e transparente. Perfeito para dias quentes e alívio olfativo."
+  },
+  "2": {
+    "brand": "Adolfo Dominguez",
+    "name": "Agua Fresca",
+    "concentration": "EDT",
+    "family": "Aromático Fougère",
+    "accords": [
+      "Aromático",
+      "Amadeirado",
+      "Cítrico",
+      "Especiado Fresco",
+      "Herbal"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Mandarina",
+        "Petitgrain",
+        "Manjerona",
+        "Artemísia"
+      ],
+      "heart": [
+        "Lavanda",
+        "Sálvia",
+        "Alecrim",
+        "Coentro",
+        "Bagas de Zimbro",
+        "Pimenta"
+      ],
+      "base": [
+        "Vetiver",
+        "Musgo de Carvalho",
+        "Cedro",
+        "Pinho",
+        "Patchouli",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "calor"
+    ],
+    "intensity": 2,
+    "character": "Herbal mediterrâneo fresco, natural e elegante. Ideal para ambiente profissional diurno e dias amenos."
+  },
+  "3": {
+    "brand": "Afnan",
+    "name": "Rare Carbon",
+    "concentration": "EDP",
+    "family": "Couro Floral Amadeirado",
+    "accords": [
+      "Couro",
+      "Amadeirado",
+      "Terroso",
+      "Ozônico",
+      "Âmbar",
+      "Floral"
+    ],
+    "pyramid": {
+      "top": [
+        "Couro",
+        "Noz-moscada",
+        "Canela",
+        "Folha de Violeta"
+      ],
+      "heart": [
+        "Violeta",
+        "Rosa",
+        "Cedro",
+        "Agarwood (Oud)"
+      ],
+      "base": [
+        "Vetiver",
+        "Âmbar",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Couro nobre e aveludado com nuances florais e amadeiradas (DNA Ombré Leather). Marcante e refinado."
+  },
+  "4": {
+    "brand": "Afnan",
+    "name": "Supremacy Collector’s Edition Pour Homme",
+    "concentration": "EDP",
+    "family": "Amadeirado Frutado",
+    "accords": [
+      "Frutado",
+      "Esfumado",
+      "Amadeirado",
+      "Cítrico",
+      "Musgoso"
+    ],
+    "pyramid": {
+      "top": [
+        "Abacaxi",
+        "Bergamota",
+        "Maçã",
+        "Groselha Preta"
+      ],
+      "heart": [
+        "Vidoeiro",
+        "Patchouli",
+        "Jasmim",
+        "Rosa"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Âmbar Cinzento",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Frutado de abacaxi com bétula esfumada e musgo (DNA Aventus / Hacivat). Versatilidade executiva potente."
+  },
+  "5": {
+    "brand": "Afnan",
+    "name": "Supremacy Not Only Intense",
+    "concentration": "Extrait",
+    "family": "Oriental Especiado Frutado",
+    "accords": [
+      "Frutado",
+      "Musgo de Carvalho",
+      "Amadeirado",
+      "Terroso",
+      "Especiado"
+    ],
+    "pyramid": {
+      "top": [
+        "Groselha Preta",
+        "Bergamota",
+        "Maçã"
+      ],
+      "heart": [
+        "Musgo de Carvalho",
+        "Patchouli",
+        "Lavanda"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Almíscar",
+        "Açafrão"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite"
+    ],
+    "intensity": 4,
+    "character": "Groselha frutada densa sustentada por uma overdose de musgo de carvalho e patchouli terroso. Grande presença."
+  },
+  "6": {
+    "brand": "Afnan",
+    "name": "Turathi Blue",
+    "concentration": "EDP",
+    "family": "Cítrico Aromático Amadeirado",
+    "accords": [
+      "Cítrico",
+      "Âmbar",
+      "Amadeirado",
+      "Almiscarado",
+      "Especiado Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Âmbar",
+        "Notas Amadeiradas"
+      ],
+      "base": [
+        "Almíscar",
+        "Patchouli",
+        "Especiarias"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Toranja cintilante e suculenta sobre leito de âmbar moderno e madeiras limpas (DNA Bvlgari Tygar). Excelente no calor."
+  },
+  "7": {
+    "brand": "Ajmal",
+    "name": "Amaze for Men",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Frutado",
+    "accords": [
+      "Frutado",
+      "Amadeirado",
+      "Atalcado",
+      "Floral Branco",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Maçã",
+        "Bergamota",
+        "Tagetes (Cravo-de-defunto)"
+      ],
+      "heart": [
+        "Íris",
+        "Jasmim"
+      ],
+      "base": [
+        "Patchouli",
+        "Couro",
+        "Musgo de Carvalho",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Abertura fresca de maçã e cítricos que evolui para uma íris elegante e base amadeirada com toque de couro."
+  },
+  "8": {
+    "brand": "Alfred Dunhill",
+    "name": "Icon",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático",
+    "accords": [
+      "Cítrico",
+      "Especiado Fresco",
+      "Amadeirado",
+      "Aromático",
+      "Floral Branco"
+    ],
+    "pyramid": {
+      "top": [
+        "Néroli",
+        "Bergamota Italiana",
+        "Pimenta Preta",
+        "Petitgrain"
+      ],
+      "heart": [
+        "Pimenta Preta",
+        "Lavanda",
+        "Cardamomo",
+        "Bagas de Zimbro",
+        "Sálvia"
+      ],
+      "base": [
+        "Vetiver",
+        "Agarwood (Oud)",
+        "Couro",
+        "Musgo de Carvalho",
+        "Íris"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Néroli e pimenta preta sobre uma base refinada de vetiver e madeiras. Assinatura profissional de alto padrão."
+  },
+  "9": {
+    "brand": "Armaf",
+    "name": "Club de Nuit Intense Man Limited Edition Parfum",
+    "concentration": "Parfum",
+    "family": "Cítrico Amadeirado Esfumado",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Esfumado",
+      "Amadeirado",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Abacaxi",
+        "Groselha Preta",
+        "Bergamota",
+        "Maçã"
+      ],
+      "heart": [
+        "Vidoeiro",
+        "Jasmim",
+        "Rosa"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Almíscar",
+        "Patchouli",
+        "Baunilha"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Versão mais refinada e cremosa da clássica combinação cítrica frutada com fumaça de bétula. Campeão de versatilidade."
+  },
+  "10": {
+    "brand": "Armaf",
+    "name": "Club de Nuit Milestone",
+    "concentration": "EDP",
+    "family": "Marinho Amadeirado Frutado",
+    "accords": [
+      "Marinho",
+      "Salgado",
+      "Frutado",
+      "Cítrico",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Frutas Vermelhas",
+        "Sal Marinho",
+        "Notas Cítricas"
+      ],
+      "heart": [
+        "Mandarina",
+        "Limão Siciliano",
+        "Íris",
+        "Bergamota"
+      ],
+      "base": [
+        "Almíscar Marinho",
+        "Sândalo",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "praia",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Brisa marinha salgada com frutas vermelhas e melancia suculenta (DNA Millésime Impérial). Refrescante e opulento no calor."
+  },
+  "11": {
+    "brand": "Armaf",
+    "name": "Club de Nuit Precieux I",
+    "concentration": "Extrait",
+    "family": "Amadeirado Âmbar Frutado",
+    "accords": [
+      "Frutado",
+      "Doce",
+      "Âmbar",
+      "Amadeirado",
+      "Especiado Quente"
+    ],
+    "pyramid": {
+      "top": [
+        "Abacaxi",
+        "Pêra",
+        "Bergamota",
+        "Pimenta Rosa",
+        "Limão"
+      ],
+      "heart": [
+        "Flores Brancas",
+        "Baunilha",
+        "Patchouli",
+        "Anis"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Cedro",
+        "Couro",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "frio"
+    ],
+    "intensity": 5,
+    "character": "Extrait de alta concentração com frutas maduras, baunilha untuosa e âmbar amadeirado. Potência e projeção duradoura."
+  },
+  "12": {
+    "brand": "Armaf",
+    "name": "Club de Nuit Sillage",
+    "concentration": "EDP",
+    "family": "Cítrico Floral Almiscarado",
+    "accords": [
+      "Cítrico",
+      "Metálico",
+      "Almiscarado",
+      "Amadeirado",
+      "Verde"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Groselha Preta",
+        "Limão",
+        "Folha de Violeta",
+        "Gengibre"
+      ],
+      "heart": [
+        "Íris",
+        "Rosa",
+        "Jasmim"
+      ],
+      "base": [
+        "Almíscar",
+        "Ambroxan",
+        "Cedro",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "Água de montanha gelada, cítricos frescos, toque metálico limpo e groselha (DNA Silver Mountain Water)."
+  },
+  "13": {
+    "brand": "Aurora Scents",
+    "name": "Black Obsidian",
+    "concentration": "EDP",
+    "family": "Oriental Amadeirado Especiado",
+    "accords": [
+      "Amadeirado",
+      "Âmbar",
+      "Especiado Quente",
+      "Esfumado",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Pimenta Rosa",
+        "Noz-moscada"
+      ],
+      "heart": [
+        "Olíbano",
+        "Cedro",
+        "Gerânio"
+      ],
+      "base": [
+        "Vetiver",
+        "Couro",
+        "Âmbar",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Composição escura e sofisticada com resinas de olíbano, especiarias quentes e couro aveludado."
+  },
+  "14": {
+    "brand": "Aurora Scents",
+    "name": "Cafe Citadel",
+    "concentration": "EDP",
+    "family": "Gourmand Oriental Especiado",
+    "accords": [
+      "Café",
+      "Especiado Quente",
+      "Baunilha",
+      "Doce",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Café Torrado",
+        "Cardamomo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Canela",
+        "Avelã",
+        "Cedro"
+      ],
+      "base": [
+        "Baunilha",
+        "Fava Tonka",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "Café arábica recém-passado com cardamomo, avelã e fundo adocicado de fava tonka. Confortável e envolvente."
+  },
+  "15": {
+    "brand": "Aurora Scents",
+    "name": "Vanilla Espresso",
+    "concentration": "EDP",
+    "family": "Gourmand Âmbar",
+    "accords": [
+      "Baunilha",
+      "Café",
+      "Doce",
+      "Quente",
+      "Cacau"
+    ],
+    "pyramid": {
+      "top": [
+        "Grãos de Café",
+        "Baunilha de Madagascar"
+      ],
+      "heart": [
+        "Caramelo",
+        "Cacau",
+        "Leite Vaporizado"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Benjoim",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "casa"
+    ],
+    "intensity": 4,
+    "character": "Expresso cremoso enriquecido com favas de baunilha e caramelo morno. Pura indulgência olfativa gourmand."
+  },
+  "16": {
+    "brand": "Azzaro",
+    "name": "The Most Wanted",
+    "concentration": "EDP Intense",
+    "family": "Âmbar Especiado Amadeirado",
+    "accords": [
+      "Doce",
+      "Caramelo",
+      "Especiado Quente",
+      "Amadeirado",
+      "Âmbar"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo da Guatemala"
+      ],
+      "heart": [
+        "Toffee (Caramelo derretido)"
+      ],
+      "base": [
+        "Madeira de Âmbar (Akigalawood)"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "encontros",
+      "social",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Cardamomo vibrante seguido por um coração cremoso de toffee sobre madeiras ambaradas modernas. Sedução pura."
+  },
+  "17": {
+    "brand": "Azzaro",
+    "name": "The Most Wanted Parfum",
+    "concentration": "Parfum",
+    "family": "Amadeirado Especiado Gourmand",
+    "accords": [
+      "Baunilha",
+      "Especiado Quente",
+      "Amadeirado",
+      "Doce",
+      "Balsâmico"
+    ],
+    "pyramid": {
+      "top": [
+        "Gengibre Vermelho"
+      ],
+      "heart": [
+        "Notas Amadeiradas Incensadas"
+      ],
+      "base": [
+        "Baunilha Bourbon"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Gengibre picante contrastado com baunilha bourbon aveludada e madeiras nobres. Caloroso e noturno."
+  },
+  "18": {
+    "brand": "Azzaro",
+    "name": "Wanted by Night",
+    "concentration": "EDP",
+    "family": "Amadeirado Oriental Especiado",
+    "accords": [
+      "Canela",
+      "Tabaco",
+      "Frutado",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Canela",
+        "Mandarina",
+        "Lavanda",
+        "Limão"
+      ],
+      "heart": [
+        "Cedro Vermelho",
+        "Incenso",
+        "Cominho",
+        "Notas Frutadas"
+      ],
+      "base": [
+        "Tabaco",
+        "Baunilha",
+        "Couro",
+        "Cedro",
+        "Benjoim"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Explosão de canela e mandarina sobre uma cama de tabaco frutado, cedro vermelho e incenso. Famoso para saídas noturnas."
+  },
+  "19": {
+    "brand": "Banana Republic",
+    "name": "Midnight Hour",
+    "concentration": "EDP",
+    "family": "Amadeirado Especiado Frutado",
+    "accords": [
+      "Frutado",
+      "Especiado Quente",
+      "Amadeirado",
+      "Terroso",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Manga",
+        "Gengibre",
+        "Pimenta Rosa"
+      ],
+      "heart": [
+        "Gerânio",
+        "Pimenta Preta",
+        "Folha de Cedro"
+      ],
+      "base": [
+        "Patchouli",
+        "Âmbar",
+        "Agarwood (Oud)"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "noite",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Manga madura apimentada com gengibre e base resinosa moderna. Frutado escuro elegante."
+  },
+  "20": {
+    "brand": "Bvlgari",
+    "name": "Aqva Pour Homme",
+    "concentration": "EDT",
+    "family": "Aquático Aromático",
+    "accords": [
+      "Marinho",
+      "Cítrico",
+      "Aromático",
+      "Aquático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Laranja",
+        "Petitgrain"
+      ],
+      "heart": [
+        "Alga Marinha (Posidonia Oceanica)",
+        "Lavanda",
+        "Flor de Algodão"
+      ],
+      "base": [
+        "Cedro da Virgínia",
+        "Notas Amadeiradas",
+        "Âmbar Mineral",
+        "Sálvia Esclareia"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Oceano profundo e mineral, alga marinha natural e cítricos salgados. O aquático mais autêntico e marinho da perfumaria."
+  },
+  "21": {
+    "brand": "Bvlgari",
+    "name": "Man in Black",
+    "concentration": "EDP",
+    "family": "Oriental Especiado Couro",
+    "accords": [
+      "Especiado Quente",
+      "Rum",
+      "Couro",
+      "Tabaco",
+      "Amadeirado",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Especiarias",
+        "Rum Envelhecido",
+        "Tabaco"
+      ],
+      "heart": [
+        "Couro",
+        "Íris",
+        "Tuberosa"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Benjoim",
+        "Madeira Guaiac"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "Rum caribenho, tabaco aromático e couro macio com toque refinado de íris. Um monumento da perfumaria masculina para o frio."
+  },
+  "22": {
+    "brand": "Bvlgari",
+    "name": "Man Terrae Essence",
+    "concentration": "EDP",
+    "family": "Amadeirado Terroso",
+    "accords": [
+      "Terroso",
+      "Amadeirado",
+      "Cítrico",
+      "Vetiver",
+      "Balsâmico"
+    ],
+    "pyramid": {
+      "top": [
+        "Cidra (Citrino)",
+        "Calamansi"
+      ],
+      "heart": [
+        "Vetiver do Haiti",
+        "Vetiver de Java",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Notas Terrosas da Toscana",
+        "Styrax (Estoraque)"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Terra fértil toscana aquecida pelo sol, duo nobre de vetiveres e raspas cítricas amargas. Muito sofisticado."
+  },
+  "23": {
+    "brand": "Carolina Herrera",
+    "name": "212 VIP Men Party Fever",
+    "concentration": "EDT",
+    "family": "Amadeirado Aromático Frutado",
+    "accords": [
+      "Aromático",
+      "Verde",
+      "Frutado",
+      "Especiado Fresco",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Maçã Vermelha",
+        "Cítricos",
+        "Gengibre",
+        "Bagas de Zimbro"
+      ],
+      "heart": [
+        "Acorde Canábico Herbáceo",
+        "Gerânio",
+        "Frésia"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Cedro",
+        "Almíscar",
+        "Olíbano"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "Maçã vibrante com notas herbais aromáticas e gengibre. Jovem, festivo e descontraído para noites de verão."
+  },
+  "24": {
+    "brand": "Carolina Herrera",
+    "name": "Chic for Men",
+    "concentration": "EDT",
+    "family": "Amadeirado Especiado",
+    "accords": [
+      "Especiado Quente",
+      "Ozônico",
+      "Aquático",
+      "Amadeirado",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Melancia",
+        "Cardamomo",
+        "Limão",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Pimenta",
+        "Canela"
+      ],
+      "base": [
+        "Sândalo",
+        "Fava Tonka",
+        "Almíscar",
+        "Âmbar",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Abertura aquosa de melancia fresca e cardamomo que evolui para especiarias aveludadas e camurça amadeirada. Charme clássico."
+  },
+  "25": {
+    "brand": "Chlorophylla",
+    "name": "H",
+    "concentration": "Deo Colônia",
+    "family": "Aromático Fougère Cítrico",
+    "accords": [
+      "Aromático",
+      "Cítrico",
+      "Herbal",
+      "Fougère",
+      "Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Limão",
+        "Lavanda"
+      ],
+      "heart": [
+        "Gerânio",
+        "Alecrim",
+        "Cravo"
+      ],
+      "base": [
+        "Cedro",
+        "Musgo de Carvalho",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "cotidiano",
+      "calor",
+      "casa"
+    ],
+    "intensity": 2,
+    "character": "Fougère cítrico herbal nacional direto e refrescante. Sensação de banho tomado e frescor imediato."
+  },
+  "26": {
+    "brand": "Clinique",
+    "name": "Happy for Men",
+    "concentration": "EDC",
+    "family": "Cítrico Aromático",
+    "accords": [
+      "Cítrico",
+      "Verde",
+      "Marinho",
+      "Aromático",
+      "Floral Branco"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Lima",
+        "Notas Marinhas",
+        "Limão Siciliano",
+        "Notas Verdes"
+      ],
+      "heart": [
+        "Frésia",
+        "Jasmim",
+        "Lírio-do-vale",
+        "Rosa"
+      ],
+      "base": [
+        "Cipreste",
+        "Cedro",
+        "Almíscar",
+        "Madeira Guaiac"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Uma dose pura de sol e mandarina efervescente. Ultra positivo, fresco e limpo, excelente para calor intenso."
+  },
+  "27": {
+    "brand": "Condé Parfum",
+    "name": "Caipi d’Argent",
+    "concentration": "Parfum",
+    "family": "Cítrico Aromático Verde",
+    "accords": [
+      "Cítrico",
+      "Alcoólico",
+      "Fresco",
+      "Aromático",
+      "Verde"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Tahiti",
+        "Cachaça Prata",
+        "Hortelã"
+      ],
+      "heart": [
+        "Gengibre",
+        "Alecrim",
+        "Notas Aquáticas"
+      ],
+      "base": [
+        "Cedro",
+        "Vetiver",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "A essência de uma caipirinha gelada em dia ensolarado: limão tahiti espremido na hora, cachaça nobre e hortelã fresca."
+  },
+  "28": {
+    "brand": "Dior",
+    "name": "Dior Homme Intense (2011)",
+    "concentration": "EDP",
+    "family": "Amadeirado Floral Almiscarado / Íris",
+    "accords": [
+      "Íris",
+      "Atalcado",
+      "Amadeirado",
+      "Terroso",
+      "Lavanda",
+      "Floral"
+    ],
+    "pyramid": {
+      "top": [
+        "Lavanda da Provença"
+      ],
+      "heart": [
+        "Íris Toscana",
+        "Ambreta (Almíscar Vegetal)",
+        "Pêra"
+      ],
+      "base": [
+        "Cedro da Virgínia",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "A maior obra-prima de íris masculina: textura acetinada de maquiagem de luxo, cacau sutil e cedro seco. Aristocrático."
+  },
+  "29": {
+    "brand": "Dior",
+    "name": "Eau Sauvage",
+    "concentration": "EDT",
+    "family": "Cítrico Aromático Clássico",
+    "accords": [
+      "Cítrico",
+      "Aromático",
+      "Especiado Fresco",
+      "Amadeirado",
+      "Musgoso"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Bergamota",
+        "Manjericão",
+        "Alecrim",
+        "Alcaravia"
+      ],
+      "heart": [
+        "Hedione (Jasmim aquático)",
+        "Coentro",
+        "Patchouli",
+        "Cravo",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Vetiver",
+        "Almíscar",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor",
+      "formal"
+    ],
+    "intensity": 2,
+    "character": "Criado por Edmond Roudnitska em 1966: o benchmark histórico da elegância cítrica com hedione e ervas nobres."
+  },
+  "30": {
+    "brand": "Dolce & Gabbana",
+    "name": "Light Blue Eau Intense Pour Homme",
+    "concentration": "EDP",
+    "family": "Aquático Cítrico Amadeirado",
+    "accords": [
+      "Cítrico",
+      "Marinho",
+      "Aromático",
+      "Salgado",
+      "Especiado Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja Congelada",
+        "Mandarina"
+      ],
+      "heart": [
+        "Água do Mar",
+        "Bagas de Zimbro"
+      ],
+      "base": [
+        "Madeira de Âmbar (Ambroxan)",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Toranja suculenta e água salgada do mar com fixação potente de ambroxan. Um dos maiores campeões de calor do mundo."
+  },
+  "31": {
+    "brand": "Dolce & Gabbana",
+    "name": "Light Blue Pour Homme",
+    "concentration": "EDT",
+    "family": "Cítrico Aromático",
+    "accords": [
+      "Cítrico",
+      "Especiado Fresco",
+      "Aromático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Bergamota",
+        "Mandarina Siciliana",
+        "Zimbro"
+      ],
+      "heart": [
+        "Pimenta",
+        "Alecrim",
+        "Pau-rosa"
+      ],
+      "base": [
+        "Incenso",
+        "Almíscar",
+        "Musgo de Carvalho"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "casa"
+    ],
+    "intensity": 2,
+    "character": "Clássico cítrico aromático com pimenta e alecrim, leve e descontraído para o litoral italiano."
+  },
+  "32": {
+    "brand": "Dolce & Gabbana",
+    "name": "Pour Homme (2012)",
+    "concentration": "EDT",
+    "family": "Aromático Fougère",
+    "accords": [
+      "Aromático",
+      "Cítrico",
+      "Especiado Fresco",
+      "Lavanda",
+      "Tabaco"
+    ],
+    "pyramid": {
+      "top": [
+        "Cítricos",
+        "Bergamota",
+        "Néroli",
+        "Mandarina"
+      ],
+      "heart": [
+        "Lavanda",
+        "Sálvia",
+        "Pimenta"
+      ],
+      "base": [
+        "Tabaco",
+        "Fava Tonka",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Lavanda limpa, néroli fresco e sálvia equilibrados por uma nota clássica de tabaco seco e tonka. Assinatura italiana pura."
+  },
+  "33": {
+    "brand": "Dolce & Gabbana",
+    "name": "The One for Men Eau de Parfum",
+    "concentration": "EDP",
+    "family": "Oriental Amadeirado Especiado",
+    "accords": [
+      "Âmbar",
+      "Tabaco",
+      "Especiado Quente",
+      "Cítrico",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Coentro",
+        "Manjericão"
+      ],
+      "heart": [
+        "Cardamomo",
+        "Gengibre",
+        "Flor de Laranjeira"
+      ],
+      "base": [
+        "Âmbar",
+        "Tabaco",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "encontros",
+      "frio"
+    ],
+    "intensity": 3,
+    "character": "Âmbar dourado e tabaco macio com cardamomo e gengibre. O clássico definitivo para encontros a dois."
+  },
+  "34": {
+    "brand": "Ermenegildo Zegna",
+    "name": "Zegna Forte",
+    "concentration": "EDT",
+    "family": "Âmbar Amadeirado",
+    "accords": [
+      "Doce",
+      "Mel",
+      "Tabaco",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Rosa",
+        "Gengibre",
+        "Cítricos",
+        "Toranja"
+      ],
+      "heart": [
+        "Mel Branco",
+        "Folha de Tabaco",
+        "Fava Tonka"
+      ],
+      "base": [
+        "Madeira de Cashmere",
+        "Cedro",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Mel branco sofisticado com folha de tabaco e cashmere. Elegância masculina refinada de alfaiataria italiana."
+  },
+  "35": {
+    "brand": "Escentric Molecules",
+    "name": "Escentric 05",
+    "concentration": "EDT",
+    "family": "Amadeirado Aromático Verde",
+    "accords": [
+      "Amadeirado",
+      "Aromático",
+      "Coníferas",
+      "Cítrico",
+      "Almiscarado"
+    ],
+    "pyramid": {
+      "top": [
+        "Bagas de Zimbro",
+        "Bergamota",
+        "Alecrim",
+        "Louro",
+        "Laranja"
+      ],
+      "heart": [
+        "Cipreste",
+        "Hedione",
+        "Íris",
+        "Frésia",
+        "Jasmim"
+      ],
+      "base": [
+        "Cashmeran",
+        "Cistus Labdanum",
+        "Almíscar",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "calor",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Ciprestes e zimbro mediterrâneos sobre uma base radiante de cashmeran e resinas transparentes."
+  },
+  "36": {
+    "brand": "Escentric Molecules",
+    "name": "Molecule 01 + Iris",
+    "concentration": "EDT",
+    "family": "Amadeirado Floral Atalcado",
+    "accords": [
+      "Amadeirado",
+      "Íris",
+      "Atalcado",
+      "Terroso",
+      "Almiscarado"
+    ],
+    "pyramid": {
+      "top": [
+        "Íris Pálida Nobre"
+      ],
+      "heart": [
+        "Extrato Natural de Íris"
+      ],
+      "base": [
+        "Iso E Super Puro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "detox",
+      "casa"
+    ],
+    "intensity": 2,
+    "character": "A pureza da raiz de íris natural unida à aura aveludada do Iso E Super. Minimalismo supremo, nunca satura o olfato."
+  },
+  "37": {
+    "brand": "Escentric Molecules",
+    "name": "Molecule 01 + Mandarin",
+    "concentration": "EDT",
+    "family": "Amadeirado Cítrico",
+    "accords": [
+      "Cítrico",
+      "Amadeirado",
+      "Frutado",
+      "Fresco",
+      "Almiscarado"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina Natural Suculenta"
+      ],
+      "heart": [
+        "Mandarina"
+      ],
+      "base": [
+        "Iso E Super Puro"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Mandarina hiper-realista, borbulhante e natural, apoiada pelo calor transparente e amadeirado do Iso E Super."
+  },
+  "38": {
+    "brand": "Escentric Molecules",
+    "name": "Molecule 01 + Patchouli",
+    "concentration": "EDT",
+    "family": "Amadeirado Terroso",
+    "accords": [
+      "Amadeirado",
+      "Patchouli",
+      "Terroso",
+      "Balsâmico"
+    ],
+    "pyramid": {
+      "top": [
+        "Patchouli Coeur (Fracionado limpo)"
+      ],
+      "heart": [
+        "Óleo de Patchouli da Indonésia"
+      ],
+      "base": [
+        "Iso E Super Puro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Patchouli moderno desprovido de qualquer aresta canforada, limpo e sofisticado com a assinatura amadeirada do Iso E Super."
+  },
+  "39": {
+    "brand": "Escentric Molecules",
+    "name": "Molecule 03",
+    "concentration": "EDT",
+    "family": "Amadeirado Terroso Verde",
+    "accords": [
+      "Vetiver",
+      "Terroso",
+      "Amadeirado",
+      "Verde",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Acetato de Vetiveryle"
+      ],
+      "heart": [
+        "Acetato de Vetiveryle"
+      ],
+      "base": [
+        "Acetato de Vetiveryle"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Vetiveryle Acetate monocromático: a faceta mais pura, seca, limpa e toranja-amarga do vetiver."
+  },
+  "40": {
+    "brand": "Escentric Molecules",
+    "name": "Molecule 05",
+    "concentration": "EDT",
+    "family": "Amadeirado Almiscarado Quente",
+    "accords": [
+      "Amadeirado",
+      "Almiscarado",
+      "Atalcado",
+      "Confortável"
+    ],
+    "pyramid": {
+      "top": [
+        "Cashmeran Puro"
+      ],
+      "heart": [
+        "Cashmeran Puro"
+      ],
+      "base": [
+        "Cashmeran Puro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "casa",
+      "cotidiano",
+      "frio",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Cashmeran puro: sensação de suéter de lã macio, aconchego quente, madeira seca e toque almiscarado íntimo."
+  },
+  "41": {
+    "brand": "Fragrance World",
+    "name": "Ace",
+    "concentration": "EDP",
+    "family": "Amadeirado Especiado",
+    "accords": [
+      "Especiado Quente",
+      "Amadeirado",
+      "Âmbar",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Preta",
+        "Bergamota"
+      ],
+      "heart": [
+        "Cravo",
+        "Canela",
+        "Madeira Guaiac"
+      ],
+      "base": [
+        "Cedro",
+        "Baunilha",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Amadeirado especiado rico com notas de canela, pimenta e madeiras nobres para clima fresco."
+  },
+  "42": {
+    "brand": "French Avenue",
+    "name": "Liquid Brun",
+    "concentration": "Extrait",
+    "family": "Âmbar Amadeirado Especiado",
+    "accords": [
+      "Baunilha",
+      "Canela",
+      "Doce",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Canela",
+        "Cardamomo",
+        "Flor de Laranjeira",
+        "Bergamota"
+      ],
+      "heart": [
+        "Baunilha Bourbon",
+        "Elemi"
+      ],
+      "base": [
+        "Pralinê",
+        "Fava Tonka",
+        "Madeira Guaiac",
+        "Ambroxan"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "encontros",
+      "social"
+    ],
+    "intensity": 5,
+    "character": "Baunilha bourbon aveludada, canela fina e pralinê tostado (DNA Althaïr Parfums de Marly). Rastro doce magnético."
+  },
+  "43": {
+    "brand": "Giorgio Armani",
+    "name": "Armani Code",
+    "concentration": "EDT",
+    "family": "Âmbar Fougère",
+    "accords": [
+      "Cítrico",
+      "Couro",
+      "Anis",
+      "Tabaco",
+      "Fava Tonka"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Limão"
+      ],
+      "heart": [
+        "Flor de Oliveira",
+        "Anis Estrelado",
+        "Madeira Guaiac"
+      ],
+      "base": [
+        "Couro",
+        "Tabaco",
+        "Fava Tonka"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "primavera",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "noite",
+      "encontros"
+    ],
+    "intensity": 3,
+    "character": "Anis estrelado e flor de oliveira sobre base de couro e fava tonka. Elegância noturna sob medida."
+  },
+  "44": {
+    "brand": "Giorgio Armani",
+    "name": "Armani Code Absolu Gold",
+    "concentration": "Parfum",
+    "family": "Âmbar Especiado Gourmand",
+    "accords": [
+      "Âmbar",
+      "Baunilha",
+      "Íris",
+      "Especiado Quente",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina Verde",
+        "Maçã"
+      ],
+      "heart": [
+        "Íris",
+        "Açafrão"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Benjoim",
+        "Cedro",
+        "Madeira Guaiac"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Opulência de açafrão com fava tonka dourada e íris nobre. Quente, sedutor e imponente."
+  },
+  "45": {
+    "brand": "Giorgio Armani",
+    "name": "Stronger With You Intensely",
+    "concentration": "EDP",
+    "family": "Âmbar Fougère Gourmand",
+    "accords": [
+      "Doce",
+      "Caramelo",
+      "Baunilha",
+      "Canela",
+      "Âmbar"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Rosa",
+        "Zimbro",
+        "Violeta"
+      ],
+      "heart": [
+        "Toffee (Caramelo)",
+        "Canela",
+        "Sálvia",
+        "Lavanda"
+      ],
+      "base": [
+        "Baunilha",
+        "Fava Tonka",
+        "Âmbar",
+        "Camurça"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social",
+      "encontros"
+    ],
+    "intensity": 5,
+    "character": "Toffee e canela envoltos em baunilha e camurça quente. Uma das maiores potências doces sedutoras modernas."
+  },
+  "46": {
+    "brand": "Gisada",
+    "name": "Ambassador Men",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Especiado",
+    "accords": [
+      "Frutado",
+      "Especiado Quente",
+      "Doce",
+      "Amadeirado",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Maçã Verde",
+        "Mandarina",
+        "Cardamomo"
+      ],
+      "heart": [
+        "Manga",
+        "Pimenta Preta",
+        "Lavanda",
+        "Patchouli"
+      ],
+      "base": [
+        "Baunilha",
+        "Âmbar",
+        "Vetiver",
+        "Madeira Teca",
+        "Musgo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "cotidiano"
+    ],
+    "intensity": 5,
+    "character": "Manga tropical com especiarias ardidas e madeiras ambaradas de projeção estrondosa. Impossível passar despercebido."
+  },
+  "47": {
+    "brand": "Givenchy",
+    "name": "Gentleman (2017)",
+    "concentration": "EDT",
+    "family": "Amadeirado Floral Fougère",
+    "accords": [
+      "Íris",
+      "Frutado",
+      "Atalcado",
+      "Lavanda",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Pêra",
+        "Cardamomo",
+        "Abacaxi"
+      ],
+      "heart": [
+        "Íris",
+        "Lavanda",
+        "Gerânio"
+      ],
+      "base": [
+        "Patchouli",
+        "Couro",
+        "Baunilha Negra"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Pêra crocante e íris atalcada com toque de couro leve. Versátil, jovial e refinado."
+  },
+  "48": {
+    "brand": "Givenchy",
+    "name": "Pi",
+    "concentration": "EDT",
+    "family": "Oriental Amadeirado Baunilha",
+    "accords": [
+      "Baunilha",
+      "Doce",
+      "Amendoado",
+      "Âmbar",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Alecrim",
+        "Estragão",
+        "Manjericão"
+      ],
+      "heart": [
+        "Anis",
+        "Néroli",
+        "Gerânio",
+        "Lírio-do-vale"
+      ],
+      "base": [
+        "Baunilha",
+        "Fava Tonka",
+        "Benjoim",
+        "Amêndoa",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "frio",
+      "noite",
+      "casa"
+    ],
+    "intensity": 3,
+    "character": "Baunilha aveludada com benjoim, amêndoa e ervas doces. Aconchegante e nostálgico, uma lenda dos anos 90."
+  },
+  "49": {
+    "brand": "Granado",
+    "name": "Bergamota & Flor de Laranjeira",
+    "concentration": "EDC",
+    "family": "Cítrico Floral",
+    "accords": [
+      "Cítrico",
+      "Floral Branco",
+      "Fresco",
+      "Limpo"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Laranja Doce"
+      ],
+      "heart": [
+        "Flor de Laranjeira",
+        "Jasmim",
+        "Petitgrain"
+      ],
+      "base": [
+        "Almíscar",
+        "Âmbar",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "casa",
+      "detox"
+    ],
+    "intensity": 1,
+    "character": "Frescor luminoso da flor de laranjeira banhada pelo cítrico da bergamota. Suave e reconfortante."
+  },
+  "50": {
+    "brand": "Granado",
+    "name": "Cardamomo & Gengibre",
+    "concentration": "EDC",
+    "family": "Aromático Especiado Fresco",
+    "accords": [
+      "Especiado Fresco",
+      "Cítrico",
+      "Aromático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Gengibre",
+        "Cardamomo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Lavanda",
+        "Violeta"
+      ],
+      "base": [
+        "Cedro",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor"
+    ],
+    "intensity": 2,
+    "character": "Especiarias frescas e vibrantes que estimulam sem agredir. Ótimo para foco e rotina diurna."
+  },
+  "51": {
+    "brand": "Granado",
+    "name": "Mandarina & Sândalo",
+    "concentration": "EDC",
+    "family": "Cítrico Amadeirado",
+    "accords": [
+      "Cítrico",
+      "Amadeirado",
+      "Suave",
+      "Aconchegante"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Bergamota",
+        "Frésia"
+      ],
+      "heart": [
+        "Sândalo",
+        "Cedro",
+        "Flor de Laranjeira"
+      ],
+      "base": [
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "casa",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Mandarina macia sobre um sândalo aveludado e cremoso. Tranquilo e intimista."
+  },
+  "52": {
+    "brand": "Granado",
+    "name": "Menta & Alecrim",
+    "concentration": "EDC",
+    "family": "Aromático Herbal Fresco",
+    "accords": [
+      "Aromático",
+      "Verde",
+      "Herbal",
+      "Menta",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Menta",
+        "Hortelã",
+        "Alecrim",
+        "Bergamota"
+      ],
+      "heart": [
+        "Tomilho",
+        "Lavanda"
+      ],
+      "base": [
+        "Cedro",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Ervas recém-colhidas do jardim com menta refrescante. Revigorante e antídoto contra fadiga mental."
+  },
+  "53": {
+    "brand": "Granado",
+    "name": "Verbena",
+    "concentration": "EDC",
+    "family": "Cítrico Herbal",
+    "accords": [
+      "Cítrico",
+      "Verde",
+      "Herbal",
+      "Revigorante"
+    ],
+    "pyramid": {
+      "top": [
+        "Verbena",
+        "Limão Siciliano",
+        "Bergamota"
+      ],
+      "heart": [
+        "Alecrim",
+        "Néroli"
+      ],
+      "base": [
+        "Almíscar",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "casa",
+      "detox"
+    ],
+    "intensity": 1,
+    "character": "Verbena pura com limão verde. Frescor cítrico absoluto para os dias mais quentes do ano."
+  },
+  "54": {
+    "brand": "Hermès",
+    "name": "H24",
+    "concentration": "EDT",
+    "family": "Aromático Verde Metálico",
+    "accords": [
+      "Aromático",
+      "Metálico",
+      "Verde",
+      "Floral Amarelo",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Sálvia Esclareia"
+      ],
+      "heart": [
+        "Narciso",
+        "Pau-rosa"
+      ],
+      "base": [
+        "Esclareno (Molécula de ferro de passar quente)"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Sálvia verde luminosa com o acorde metálico limpo do esclareno (cheiro de camisa engomada a vapor). Contemporâneo e elegante."
+  },
+  "55": {
+    "brand": "Hermès",
+    "name": "Terre d’Hermès",
+    "concentration": "EDT",
+    "family": "Amadeirado Cítrico Especiado",
+    "accords": [
+      "Cítrico",
+      "Amadeirado",
+      "Terroso",
+      "Especiado Fresco",
+      "Mineral"
+    ],
+    "pyramid": {
+      "top": [
+        "Laranja Amarga",
+        "Toranja"
+      ],
+      "heart": [
+        "Pimenta",
+        "Pelargônio (Gerânio)",
+        "Sílex Mineral"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Patchouli",
+        "Benjoim"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "A obra-prima de Jean-Claude Ellena: laranja cortante sobre pedra sílex e vetiver seco. Assinatura arquetípica definitiva."
+  },
+  "56": {
+    "brand": "Hermès",
+    "name": "Terre d’Hermès Eau de Parfum Intense",
+    "concentration": "EDP",
+    "family": "Amadeirado Cítrico Denso",
+    "accords": [
+      "Amadeirado",
+      "Cítrico",
+      "Terroso",
+      "Balsâmico",
+      "Mineral"
+    ],
+    "pyramid": {
+      "top": [
+        "Laranja Amarga",
+        "Toranja"
+      ],
+      "heart": [
+        "Pimenta Rosa",
+        "Sílex",
+        "Gerânio"
+      ],
+      "base": [
+        "Vetiver",
+        "Madeira de Cedro",
+        "Benjoim",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "formal",
+      "noite"
+    ],
+    "intensity": 4,
+    "character": "Concentração mais encorpada e resinosa do DNA Terre, com maior peso de benjoim e madeiras escuras."
+  },
+  "57": {
+    "brand": "Hermès",
+    "name": "Terre d’Hermès Eau Givrée",
+    "concentration": "EDP",
+    "family": "Cítrico Aromático Mineral Gelado",
+    "accords": [
+      "Cítrico",
+      "Gelado",
+      "Mineral",
+      "Aromático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cidra (Citrino)"
+      ],
+      "heart": [
+        "Bagas de Zimbro",
+        "Pimenta Timut"
+      ],
+      "base": [
+        "Notas Minerais",
+        "Notas Amadeiradas"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "trabalho"
+    ],
+    "intensity": 3,
+    "character": "Uma lufada de vento polar sobre o solo mineral de Terre: cidra cortante e zimbro gelado. Fenomenal no calor intenso."
+  },
+  "58": {
+    "brand": "Hermès",
+    "name": "Terre d’Hermès Eau Intense Vétiver",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Vetiver",
+    "accords": [
+      "Vetiver",
+      "Cítrico",
+      "Terroso",
+      "Especiado Fresco",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Toranja",
+        "Limão"
+      ],
+      "heart": [
+        "Pimenta Sichuan",
+        "Gerânio"
+      ],
+      "base": [
+        "Vetiver",
+        "Olíbano",
+        "Patchouli",
+        "Madeira de Âmbar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "formal",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "O vetiver assume o protagonismo absoluto, luminoso no topo cítrico e imponente na secagem terrosa e incensada."
+  },
+  "59": {
+    "brand": "Hermès",
+    "name": "Terre d’Hermès Parfum",
+    "concentration": "Parfum",
+    "family": "Amadeirado Chipre Cítrico",
+    "accords": [
+      "Amadeirado",
+      "Cítrico",
+      "Musgoso",
+      "Terroso",
+      "Mineral"
+    ],
+    "pyramid": {
+      "top": [
+        "Laranja",
+        "Toranja"
+      ],
+      "heart": [
+        "Sílex Mineral"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Notas Amadeiradas",
+        "Benjoim"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "primavera",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "formal",
+      "noite",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Laranja aveludada e profunda, sem as arestas ardidas da pimenta, com musgo de carvalho macio. Pura distinção."
+  },
+  "60": {
+    "brand": "Hugo Boss",
+    "name": "Boss Bottled Absolu",
+    "concentration": "Parfum",
+    "family": "Amadeirado Couro Incensado",
+    "accords": [
+      "Amadeirado",
+      "Esfumado",
+      "Couro",
+      "Balsâmico",
+      "Âmbar"
+    ],
+    "pyramid": {
+      "top": [
+        "Olíbano",
+        "Couro"
+      ],
+      "heart": [
+        "Patchouli",
+        "Mirra"
+      ],
+      "base": [
+        "Cedro",
+        "Madeira Guaiac"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "A versão mais rica e sombria da linha Boss: couro esfumado, mirra nobre e madeiras escuras."
+  },
+  "61": {
+    "brand": "Hugo Boss",
+    "name": "Boss Bottled Beyond",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Frutado",
+    "accords": [
+      "Frutado",
+      "Especiado Quente",
+      "Amadeirado",
+      "Versátil"
+    ],
+    "pyramid": {
+      "top": [
+        "Maçã Vermelha",
+        "Bergamota"
+      ],
+      "heart": [
+        "Canela",
+        "Cardamomo",
+        "Lavanda"
+      ],
+      "base": [
+        "Madeira de Cedro",
+        "Vetiver",
+        "Baunilha"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Interpretação moderna da assinatura de maçã e canela com lavanda aromática e vetiver limpo."
+  },
+  "62": {
+    "brand": "Hugo Boss",
+    "name": "Boss Bottled Elixir",
+    "concentration": "Parfum Intense",
+    "family": "Âmbar Especiado Amadeirado",
+    "accords": [
+      "Esfumado",
+      "Âmbar",
+      "Amadeirado",
+      "Especiado Quente",
+      "Terroso"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo",
+        "Incenso"
+      ],
+      "heart": [
+        "Patchouli",
+        "Vetiver"
+      ],
+      "base": [
+        "Ládano",
+        "Madeira de Cedro"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Incenso denso e cardamomo que dão lugar a um patchouli terroso e resinas quentes. Perfume de nicho em frasco de designer."
+  },
+  "63": {
+    "brand": "Hugo Boss",
+    "name": "Boss Bottled Infinite",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Frutado",
+    "accords": [
+      "Amadeirado",
+      "Frutado",
+      "Aromático",
+      "Especiado Fresco",
+      "Lavanda"
+    ],
+    "pyramid": {
+      "top": [
+        "Maçã",
+        "Mandarina",
+        "Canela",
+        "Sálvia"
+      ],
+      "heart": [
+        "Lavanda",
+        "Patchouli",
+        "Alecrim"
+      ],
+      "base": [
+        "Sândalo",
+        "Oliveira"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Maçã e canela combinadas a ervas de lavanda e madeira de oliveira. Equilíbrio perfeito para o ambiente de trabalho."
+  },
+  "64": {
+    "brand": "Hugo Boss",
+    "name": "Boss Bottled Parfum",
+    "concentration": "Parfum",
+    "family": "Amadeirado Aromático Couro",
+    "accords": [
+      "Amadeirado",
+      "Couro",
+      "Íris",
+      "Cítrico",
+      "Atalcado"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Olíbano"
+      ],
+      "heart": [
+        "Raiz de Íris",
+        "Figueira"
+      ],
+      "base": [
+        "Couro",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "noite",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Raiz de íris terrosa e madeira de figueira sobre base de couro elegante. Sóbrio e moderno."
+  },
+  "65": {
+    "brand": "Issey Miyake",
+    "name": "L’Eau d’Issey Pour Homme",
+    "concentration": "EDT",
+    "family": "Amadeirado Aquático Cítrico",
+    "accords": [
+      "Cítrico",
+      "Aquático",
+      "Especiado Fresco",
+      "Amadeirado",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Yuzu",
+        "Limão",
+        "Bergamota",
+        "Tangerina",
+        "Cipreste"
+      ],
+      "heart": [
+        "Flor de Lótus Azul",
+        "Noz-moscada",
+        "Lírio-do-vale",
+        "Canela",
+        "Gerânio"
+      ],
+      "base": [
+        "Vetiver do Taiti",
+        "Almíscar",
+        "Cedro",
+        "Sândalo",
+        "Tabaco"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "O lendário cítrico japonês com a nota inconfundível de yuzu e lótus aquático. Marcante, fresco e histórico."
+  },
+  "66": {
+    "brand": "Issey Miyake",
+    "name": "L’Eau d’Issey Pour Homme Intense",
+    "concentration": "EDT",
+    "family": "Amadeirado Especiado Cítrico",
+    "accords": [
+      "Especiado Quente",
+      "Cítrico",
+      "Incenso",
+      "Esfumado",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Yuzu",
+        "Bergamota",
+        "Mandarina",
+        "Laranja Doce"
+      ],
+      "heart": [
+        "Noz-moscada",
+        "Lótus",
+        "Canela",
+        "Cardamomo",
+        "Açafrão"
+      ],
+      "base": [
+        "Incenso",
+        "Papiro",
+        "Benjoim",
+        "Âmbar Cinzento"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "primavera",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "noite",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "O yuzu do clássico escurecido por incenso esfumado, papiro e especiarias misteriosas. Excelente em dias chuvosos."
+  },
+  "67": {
+    "brand": "Issey Miyake",
+    "name": "L’Eau Majeure d’Issey",
+    "concentration": "EDT",
+    "family": "Aquático Amadeirado Mineral Salgado",
+    "accords": [
+      "Marinho",
+      "Salgado",
+      "Aquático",
+      "Amadeirado",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Toranja"
+      ],
+      "heart": [
+        "Notas Marinhas",
+        "Sal Mineral"
+      ],
+      "base": [
+        "Cashmeran",
+        "Madeira de Cedro",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Oceano bravo e madeira salgada à deriva na praia. Brisa mineral intensa e revigorante."
+  },
+  "68": {
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Male Le Parfum",
+    "concentration": "EDP",
+    "family": "Âmbar Oriental Especiado",
+    "accords": [
+      "Baunilha",
+      "Lavanda",
+      "Especiado Quente",
+      "Atalcado",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo da Guatemala"
+      ],
+      "heart": [
+        "Lavanda Francesa",
+        "Íris"
+      ],
+      "base": [
+        "Baunilha",
+        "Notas Orientais",
+        "Madeiras"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "encontros",
+      "frio",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Cardamomo refinado, íris suntuosa e baunilha sedutora. Um dos perfumes para encontros mais elogiados de todos os tempos."
+  },
+  "69": {
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Male Lover",
+    "concentration": "EDP",
+    "family": "Âmbar Aquático Almiscarado",
+    "accords": [
+      "Marinho",
+      "Salgado",
+      "Baunilha",
+      "Almiscarado",
+      "Aquático"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Branca",
+        "Caviar de Limão"
+      ],
+      "heart": [
+        "Âmbar Cinzento",
+        "Notas Marinhas Salgadas"
+      ],
+      "base": [
+        "Almíscar",
+        "Baunilha"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "encontros"
+    ],
+    "intensity": 3,
+    "character": "Pele salgada e bronzeada com toque gourmand de baunilha e almíscar quente. Sensualidade para noites amenas."
+  },
+  "70": {
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Male Pride Edition",
+    "concentration": "EDT",
+    "family": "Cítrico Floral Amadeirado",
+    "accords": [
+      "Cítrico",
+      "Floral Branco",
+      "Fresco",
+      "Limpo"
+    ],
+    "pyramid": {
+      "top": [
+        "Laranja Sanguínea",
+        "Yuzu"
+      ],
+      "heart": [
+        "Néroli",
+        "Flor de Laranjeira"
+      ],
+      "base": [
+        "Madeiras Claras",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Explosão cítrica luminosa de laranja sanguínea e néroli floral radiante sobre almíscar branco."
+  },
+  "71": {
+    "brand": "John Varvatos",
+    "name": "XX Artisan",
+    "concentration": "EDT",
+    "family": "Amadeirado Aromático Cítrico",
+    "accords": [
+      "Cítrico",
+      "Aromático",
+      "Amadeirado",
+      "Especiado Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Laranja Amarga"
+      ],
+      "heart": [
+        "Gerânio",
+        "Pimenta Sichuan",
+        "Absinto"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 2,
+    "character": "Cítricos amargos elegantes com pimenta de Sichuan e vetiver sofisticado em estilo artesanal."
+  },
+  "72": {
+    "brand": "Joop!",
+    "name": "Wow!",
+    "concentration": "EDT",
+    "family": "Oriental Fougère Especiado",
+    "accords": [
+      "Balsâmico",
+      "Especiado Quente",
+      "Coníferas",
+      "Baunilha",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo",
+        "Folha de Violeta",
+        "Bergamota"
+      ],
+      "heart": [
+        "Bálsamo de Abeto (Pinheiro)",
+        "Gerânio",
+        "Vetiver"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Baunilha",
+        "Madeira de Cashmere"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Abeto aromático conífero combinado com cardamomo e baunilha suave. Diferenciado e aconchegante."
+  },
+  "73": {
+    "brand": "Lacoste",
+    "name": "L.12.12 Blanc (White)",
+    "concentration": "EDT",
+    "family": "Amadeirado Aromático Floral Branco",
+    "accords": [
+      "Floral Branco",
+      "Cítrico",
+      "Amadeirado",
+      "Especiado Fresco",
+      "Camurça"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Cardamomo",
+        "Alecrim"
+      ],
+      "heart": [
+        "Tuberosa",
+        "Ylang-Ylang"
+      ],
+      "base": [
+        "Cedro da Virgínia",
+        "Camurça",
+        "Couro",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 2,
+    "character": "A clássica camisa polo branca: frescor limpo de toranja e tuberosa com camurça confortável e elegante."
+  },
+  "74": {
+    "brand": "Lalique",
+    "name": "Encre Noire",
+    "concentration": "EDT",
+    "family": "Amadeirado Terroso Escuro",
+    "accords": [
+      "Amadeirado",
+      "Terroso",
+      "Vetiver",
+      "Coníferas",
+      "Esfumado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cipreste"
+      ],
+      "heart": [
+        "Vetiver do Haiti",
+        "Vetiver Bourbon"
+      ],
+      "base": [
+        "Madeira de Cashmere",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "frio",
+      "formal",
+      "casa"
+    ],
+    "intensity": 3,
+    "character": "Tinta nanquim escura em papel úmido. Cipreste austero e vetiver profundo. Uma obra-prima contemplativa e minimalista."
+  },
+  "75": {
+    "brand": "Lalique",
+    "name": "Encre Noire Sport",
+    "concentration": "EDT",
+    "family": "Amadeirado Aquático Aromático Vetiver",
+    "accords": [
+      "Amadeirado",
+      "Terroso",
+      "Aquático",
+      "Cítrico",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Bergamota",
+        "Noz-moscada"
+      ],
+      "heart": [
+        "Cipreste",
+        "Notas Aquáticas",
+        "Lavanda"
+      ],
+      "base": [
+        "Vetiver Bourbon",
+        "Vetiver do Haiti",
+        "Madeira de Cashmere",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "O DNA magistral de vetiver e cipreste arejado por toranja e notas aquáticas transparentes. Um dos melhores vetivers cotidianos."
+  },
+  "76": {
+    "brand": "Lalique",
+    "name": "Encre Noire À L’Extrême",
+    "concentration": "EDP",
+    "family": "Amadeirado Oriental Balsâmico Incensado",
+    "accords": [
+      "Amadeirado",
+      "Incenso",
+      "Balsâmico",
+      "Vetiver",
+      "Terroso"
+    ],
+    "pyramid": {
+      "top": [
+        "Cipreste",
+        "Bergamota",
+        "Elemi"
+      ],
+      "heart": [
+        "Vetiver do Haiti",
+        "Vetiver Bourbon",
+        "Incenso",
+        "Raiz de Íris"
+      ],
+      "base": [
+        "Benjoim",
+        "Sândalo",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Encre Noire enriquecido com incenso cerimonioso, resinas de benjoim e íris terrosa. Profundidade aristocrática para o frio."
+  },
+  "77": {
+    "brand": "Lattafa",
+    "name": "Art of Arabia I",
+    "concentration": "EDP",
+    "family": "Aromático Cítrico Especiado",
+    "accords": [
+      "Chá",
+      "Cítrico",
+      "Especiado Fresco",
+      "Aromático",
+      "Âmbar"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Hortelã"
+      ],
+      "heart": [
+        "Chá Preto",
+        "Gengibre",
+        "Lavanda"
+      ],
+      "base": [
+        "Ambroxan",
+        "Olíbano",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "Chá preto refinado com gengibre e hortelã fresca (DNA Imagination). Sofisticação moderna de alta versatilidade."
+  },
+  "78": {
+    "brand": "Lattafa",
+    "name": "Atlas",
+    "concentration": "EDP",
+    "family": "Marinho Aquático Salgado Monstruoso",
+    "accords": [
+      "Marinho",
+      "Salgado",
+      "Mineral",
+      "Amadeirado",
+      "Aquático"
+    ],
+    "pyramid": {
+      "top": [
+        "Notas Marinhas",
+        "Sal",
+        "Limão"
+      ],
+      "heart": [
+        "Algas Marinhas",
+        "Calone",
+        "Davi"
+      ],
+      "base": [
+        "Ambroxan",
+        "Madeira de Cedro",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "social"
+    ],
+    "intensity": 5,
+    "character": "Força oceânica titânica: salitre marinho, algas e ambroxan de fixação eterna (clone de Orto Parisi Megamare)."
+  },
+  "79": {
+    "brand": "Lattafa",
+    "name": "Qaa’ed",
+    "concentration": "EDP",
+    "family": "Oriental Especiado Âmbar Quente",
+    "accords": [
+      "Especiado Quente",
+      "Canela",
+      "Âmbar",
+      "Baunilha",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo",
+        "Canela",
+        "Bergamota"
+      ],
+      "heart": [
+        "Açafrão",
+        "Cravo",
+        "Sândalo",
+        "Cedro"
+      ],
+      "base": [
+        "Baunilha",
+        "Âmbar",
+        "Agarwood (Oud)",
+        "Couro"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Canela e cardamomo ricos com açafrão, couro e baunilha ambarada. Opulência oriental calorosa."
+  },
+  "80": {
+    "brand": "Lattafa",
+    "name": "The Kingdom for Men",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Baunilha",
+    "accords": [
+      "Baunilha",
+      "Tabaco",
+      "Lavanda",
+      "Aromático",
+      "Quente"
+    ],
+    "pyramid": {
+      "top": [
+        "Hortelã",
+        "Lavanda",
+        "Sálvia"
+      ],
+      "heart": [
+        "Baunilha",
+        "Tabaco",
+        "Benjoim"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Cedro",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Hortelã fresca combinada com baunilha cremosa e nuances de tabaco e mel. Alta sedução noturna."
+  },
+  "81": {
+    "brand": "Loewe",
+    "name": "Solo Cedro",
+    "concentration": "EDT",
+    "family": "Amadeirado Especiado Nobre",
+    "accords": [
+      "Amadeirado",
+      "Cedro",
+      "Especiado Fresco",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Rosa",
+        "Mandarina"
+      ],
+      "heart": [
+        "Noz-moscada",
+        "Lavanda"
+      ],
+      "base": [
+        "Cedro Natural",
+        "Madeira Guaiac",
+        "Benjoim"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Cedro seco e nobre de altíssima qualidade com toques de mandarina e pimenta rosa. Elegância serena."
+  },
+  "82": {
+    "brand": "Loewe",
+    "name": "Solo Loewe",
+    "concentration": "EDT",
+    "family": "Oriental Amadeirado Cítrico",
+    "accords": [
+      "Frutado",
+      "Cítrico",
+      "Especiado Quente",
+      "Aromático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Goiaba",
+        "Mandarina",
+        "Lavanda",
+        "Bergamota",
+        "Limão"
+      ],
+      "heart": [
+        "Pimenta Rosa",
+        "Noz-moscada",
+        "Canela",
+        "Cominho",
+        "Anis"
+      ],
+      "base": [
+        "Âmbar",
+        "Cedro",
+        "Almíscar",
+        "Musgo de Carvalho",
+        "Baunilha"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao",
+      "inverno"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "A harmonia dos contrários: goiaba exótica e cítricos contrastados com especiarias quentes e madeiras nobres. Assinatura espanhola icônica."
+  },
+  "83": {
+    "brand": "Maison Margiela",
+    "name": "Replica By the Fireplace",
+    "concentration": "EDT",
+    "family": "Amadeirado Gourmand Esfumado",
+    "accords": [
+      "Esfumado",
+      "Amadeirado",
+      "Baunilha",
+      "Doce",
+      "Balsâmico"
+    ],
+    "pyramid": {
+      "top": [
+        "Cravinho",
+        "Pimenta Rosa",
+        "Flor de Laranjeira"
+      ],
+      "heart": [
+        "Castanha Portuguesa Assada",
+        "Madeira Guaiac",
+        "Zimbro"
+      ],
+      "base": [
+        "Baunilha",
+        "Bálsamo do Peru",
+        "Cashmeran"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "frio",
+      "noite",
+      "casa",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "Castanhas assando na lareira crepitante de uma cabana na neve. Fumaça de lenha doce, baunilha e conforto absoluto."
+  },
+  "84": {
+    "brand": "Mancera",
+    "name": "Cedrat Boise",
+    "concentration": "EDP",
+    "family": "Cítrico Amadeirado Frutado",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Amadeirado",
+      "Couro",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Groselha Preta",
+        "Bergamota",
+        "Especiarias"
+      ],
+      "heart": [
+        "Notas Frutadas",
+        "Folha de Patchouli",
+        "Jasmim Aquático"
+      ],
+      "base": [
+        "Cedro",
+        "Couro",
+        "Sândalo",
+        "Baunilha",
+        "Almíscar Branco",
+        "Musgo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social",
+      "noite"
+    ],
+    "intensity": 4,
+    "character": "Limão siciliano e frutas sobre couro macio e madeiras nobres. Uma das maiores assinaturas coringa da perfumaria de nicho."
+  },
+  "85": {
+    "brand": "Mancera",
+    "name": "Intense Cedrat Boise",
+    "concentration": "Extrait",
+    "family": "Cítrico Amadeirado Oriental Potente",
+    "accords": [
+      "Cítrico",
+      "Amadeirado",
+      "Couro",
+      "Âmbar",
+      "Frutado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cítricos da Sicília",
+        "Groselha Preta",
+        "Especiarias"
+      ],
+      "heart": [
+        "Couro",
+        "Oud Branco",
+        "Patchouli",
+        "Sândalo"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Musgo de Carvalho",
+        "Baunilha",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "inverno",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite",
+      "social"
+    ],
+    "intensity": 5,
+    "character": "Extrato potente com cítricos mais encorpados, couro evidente e base amadeirada ambarada que dura o dia inteiro."
+  },
+  "86": {
+    "brand": "Mancera",
+    "name": "Red Tobacco",
+    "concentration": "EDP",
+    "family": "Amadeirado Especiado Tabaco",
+    "accords": [
+      "Tabaco",
+      "Especiado Quente",
+      "Baunilha",
+      "Doce",
+      "Amadeirado",
+      "Oud"
+    ],
+    "pyramid": {
+      "top": [
+        "Canela",
+        "Agarwood (Oud)",
+        "Incenso",
+        "Açafrão",
+        "Noz-moscada",
+        "Maçã Verde",
+        "Pêra Branca"
+      ],
+      "heart": [
+        "Patchouli",
+        "Jasmim"
+      ],
+      "base": [
+        "Folha de Tabaco",
+        "Baunilha de Madagascar",
+        "Âmbar",
+        "Sândalo",
+        "Madeira Guaiac",
+        "Almíscar Branco",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "frio",
+      "noite",
+      "social"
+    ],
+    "intensity": 5,
+    "character": "A força nuclear do tabaco de cachimbo mergulhado em canela, oud e baunilha. Projeção monumental para o frio intenso."
+  },
+  "87": {
+    "brand": "Mancera",
+    "name": "Red Tobacco Intense",
+    "concentration": "Extrait",
+    "family": "Tabaco Couro Incenso Aveludado",
+    "accords": [
+      "Tabaco",
+      "Couro",
+      "Baunilha",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Folha de Tabaco",
+        "Canela",
+        "Açafrão",
+        "Incenso",
+        "Pêra"
+      ],
+      "heart": [
+        "Couro Macio",
+        "Oud",
+        "Patchouli",
+        "Jasmim"
+      ],
+      "base": [
+        "Baunilha Bourbon",
+        "Âmbar",
+        "Madeira Guaiac",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "inverno"
+    ],
+    "occasions": [
+      "frio",
+      "noite",
+      "social"
+    ],
+    "intensity": 5,
+    "character": "Mais aveludado e arredondado que o original, com couro proeminente e baunilha densa sem perder a potência."
+  },
+  "88": {
+    "brand": "Mancera",
+    "name": "Tonka Cola",
+    "concentration": "EDP",
+    "family": "Âmbar Especiado Gourmand",
+    "accords": [
+      "Refrigerante de Cola",
+      "Canela",
+      "Cereja",
+      "Baunilha",
+      "Fava Tonka"
+    ],
+    "pyramid": {
+      "top": [
+        "Cereja Negra",
+        "Canela",
+        "Noz-moscada",
+        "Bergamota Siciliana"
+      ],
+      "heart": [
+        "Acorde de Coca-Cola",
+        "Patchouli da Indonésia",
+        "Flor de Laranjeira"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Baunilha",
+        "Benjoim",
+        "Ládano"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Refrigerante de cola gelado com cereja, raspas de limão e canela sobre fava tonka adocicada. Único e viciante."
+  },
+  "89": {
+    "brand": "Maracujá Brasil",
+    "name": "Limão Siciliano & Neroli",
+    "concentration": "Cologne",
+    "family": "Cítrico Floral Refrescante",
+    "accords": [
+      "Cítrico",
+      "Néroli",
+      "Floral Branco",
+      "Limpo"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Bergamota"
+      ],
+      "heart": [
+        "Néroli",
+        "Flor de Laranjeira",
+        "Petitgrain"
+      ],
+      "base": [
+        "Almíscar Branco",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "casa",
+      "detox"
+    ],
+    "intensity": 1,
+    "character": "Néroli efervescente e limão siciliano para alívio imediato no calor. Leve, refrescante e limpo."
+  },
+  "90": {
+    "brand": "Mercedes-Benz",
+    "name": "Club Black",
+    "concentration": "EDT",
+    "family": "Âmbar Gourmand Incensado",
+    "accords": [
+      "Baunilha",
+      "Incenso",
+      "Benjoim",
+      "Âmbar",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota"
+      ],
+      "heart": [
+        "Incenso",
+        "Jasmim"
+      ],
+      "base": [
+        "Baunilha Bourbon",
+        "Benjoim",
+        "Fava Tonka",
+        "Notas Amadeiradas"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "Baunilha bourbon esfumada por incenso e enriquecida por benjoim balsâmico. O padrão ouro do designer doce elegante."
+  },
+  "91": {
+    "brand": "Montblanc",
+    "name": "Explorer Ultra Blue",
+    "concentration": "EDP",
+    "family": "Cítrico Aquático Aromático",
+    "accords": [
+      "Cítrico",
+      "Marinho",
+      "Aromático",
+      "Aquático",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota Siciliana",
+        "Frutas Exóticas",
+        "Pimenta Rosa"
+      ],
+      "heart": [
+        "Notas Marinhas",
+        "Âmbar Cinzento"
+      ],
+      "base": [
+        "Notas Amadeiradas",
+        "Patchouli da Indonésia",
+        "Couro"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "trabalho"
+    ],
+    "intensity": 3,
+    "character": "Cítricos luminosos, brisa marinha e fundo amadeirado claro. Fácil de agradar e revigorante."
+  },
+  "92": {
+    "brand": "Montblanc",
+    "name": "Individuel",
+    "concentration": "EDT",
+    "family": "Oriental Amadeirado Fougère Limpo",
+    "accords": [
+      "Doce",
+      "Lavanda",
+      "Especiado Fresco",
+      "Framboesa",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Lavanda",
+        "Canela",
+        "Abacaxi",
+        "Bagas de Zimbro",
+        "Hortelã",
+        "Bergamota"
+      ],
+      "heart": [
+        "Flor de Laranjeira",
+        "Violeta",
+        "Gerânio",
+        "Jasmim"
+      ],
+      "base": [
+        "Framboesa",
+        "Baunilha",
+        "Sândalo",
+        "Chocolate Amargo",
+        "Almíscar",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Aroma limpo de amaciante de luxo com framboesa e sândalo. Criado por Pierre Bourdon, agrada a todos no escritório."
+  },
+  "93": {
+    "brand": "Montblanc",
+    "name": "Legend",
+    "concentration": "EDT",
+    "family": "Aromático Fougère Frutado",
+    "accords": [
+      "Frutado",
+      "Doce",
+      "Lavanda",
+      "Amadeirado",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Lavanda",
+        "Abacaxi",
+        "Bergamota",
+        "Lúcia-lima"
+      ],
+      "heart": [
+        "Maçã Vermelha",
+        "Frutas Secas",
+        "Musgo de Carvalho",
+        "Gerânio",
+        "Cumarina",
+        "Rosa"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Abacaxi, maçã vermelha e lavanda com base clássica de barbearia moderna (DNA Fierce). Coringa absoluto."
+  },
+  "94": {
+    "brand": "Montblanc",
+    "name": "Legend Special Edition 2012",
+    "concentration": "EDT",
+    "family": "Aromático Cítrico Fresco Aquático",
+    "accords": [
+      "Cítrico",
+      "Menta",
+      "Aromático",
+      "Amadeirado",
+      "Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Hortelã Congelada",
+        "Bergamota",
+        "Mandarina",
+        "Gengibre"
+      ],
+      "heart": [
+        "Lavanda",
+        "Rosa",
+        "Jasmim"
+      ],
+      "base": [
+        "Cedro",
+        "Sândalo",
+        "Fava Tonka",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano"
+    ],
+    "intensity": 2,
+    "character": "Versão refrescante com hortelã gelada e gengibre para o calor do dia a dia."
+  },
+  "95": {
+    "brand": "Montblanc",
+    "name": "Starwalker",
+    "concentration": "EDT",
+    "family": "Amadeirado Especiado Bambu Limpo",
+    "accords": [
+      "Amadeirado",
+      "Bambu",
+      "Cítrico",
+      "Almiscarado",
+      "Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Bambu",
+        "Bergamota"
+      ],
+      "heart": [
+        "Sândalo",
+        "Cedro",
+        "Almíscar Branco"
+      ],
+      "base": [
+        "Noz-moscada",
+        "Gengibre",
+        "Âmbar",
+        "Resina de Abeto"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor",
+      "detox"
+    ],
+    "intensity": 2,
+    "character": "Bambu verde, mandarina e cedro translúcido. Incrivelmente confortável, discreto e inofensivo em ambientes fechados."
+  },
+  "96": {
+    "brand": "Moschino",
+    "name": "Uomo?",
+    "concentration": "EDT",
+    "family": "Amadeirado Floral Almiscarado Italiano",
+    "accords": [
+      "Cítrico",
+      "Especiado Fresco",
+      "Amadeirado",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Kumquat (Laranja Kinkan)",
+        "Pau-rosa",
+        "Coentro",
+        "Aldeídos"
+      ],
+      "heart": [
+        "Cyclamen",
+        "Canela",
+        "Sálvia Esclareia",
+        "Ládano"
+      ],
+      "base": [
+        "Almíscar",
+        "Cedro",
+        "Âmbar Cinzento",
+        "Absinto"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Kumquat cítrico solar sobre madeiras com um toque de especiarias e aldeídos. Personalidade italiana charmosa."
+  },
+  "97": {
+    "brand": "Natura",
+    "name": "Essencial Elixir",
+    "concentration": "EDP",
+    "family": "Amadeirado Couro Especiado",
+    "accords": [
+      "Couro",
+      "Alcoólico",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Preta",
+        "Cardamomo",
+        "Mandarina",
+        "Toranja"
+      ],
+      "heart": [
+        "Couro",
+        "Conhaque",
+        "Lavanda"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Patchouli",
+        "Sândalo",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Couro potente aromatizado com conhaque e especiarias quentes. Um dos perfumes mais sofisticados da perfumaria brasileira."
+  },
+  "98": {
+    "brand": "Natura",
+    "name": "Homem Especiarias",
+    "concentration": "Colônia",
+    "family": "Amadeirado Especiado Fresco",
+    "accords": [
+      "Especiado Fresco",
+      "Cítrico",
+      "Amadeirado",
+      "Terroso"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Branca",
+        "Noz-moscada",
+        "Bergamota",
+        "Limão"
+      ],
+      "heart": [
+        "Gengibre",
+        "Gerânio",
+        "Elemi"
+      ],
+      "base": [
+        "Cedro",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "calor"
+    ],
+    "intensity": 2,
+    "character": "Especiarias leves e frescas combinadas com cítricos e madeiras brasileiras. Versatilidade diária."
+  },
+  "99": {
+    "brand": "Natura",
+    "name": "Humor 6 Paz e Humor",
+    "concentration": "Desodorante Colônia",
+    "family": "Aromático Fougère Cítrico Herbal",
+    "accords": [
+      "Cítrico",
+      "Aromático",
+      "Amadeirado",
+      "Herbal"
+    ],
+    "pyramid": {
+      "top": [
+        "Laranja",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Lavanda",
+        "Gerânio",
+        "Jasmim"
+      ],
+      "base": [
+        "Cedro",
+        "Sândalo",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "cotidiano",
+      "calor",
+      "casa"
+    ],
+    "intensity": 2,
+    "character": "Aroma alegre e solar de cítricos e lavanda, despretensioso e relaxante."
+  },
+  "100": {
+    "brand": "O Boticário",
+    "name": "Arbo Ocean",
+    "concentration": "Desodorante Colônia",
+    "family": "Fougère Aquático",
+    "accords": [
+      "Aquático",
+      "Aromático",
+      "Marinho",
+      "Cítrico"
+    ],
+    "pyramid": {
+      "top": [
+        "Notas Marinhas",
+        "Cítricos",
+        "Maçã"
+      ],
+      "heart": [
+        "Lavanda",
+        "Alecrim",
+        "Sálvia"
+      ],
+      "base": [
+        "Âmbar",
+        "Cedro",
+        "Sândalo",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano"
+    ],
+    "intensity": 2,
+    "character": "Brisa marinha e frescor aquático com base herbal. Feito sob medida para dias quentes e ensolarados."
+  },
+  "101": {
+    "brand": "O Boticário",
+    "name": "Zaad Expedition",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Mineral Gin",
+    "accords": [
+      "Cítrico",
+      "Amadeirado",
+      "Aromático",
+      "Gin",
+      "Couro"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Toranja",
+        "Gin"
+      ],
+      "heart": [
+        "Vetiver de Java",
+        "Couro",
+        "Sálvia"
+      ],
+      "base": [
+        "Patchouli",
+        "Cedro",
+        "Âmbar Mineral"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Vetiver de Java com acorde revigorante de gin e cítricos sobre madeira mineral. Sofisticado e explorador."
+  },
+  "102": {
+    "brand": "O Boticário",
+    "name": "Zaad Go",
+    "concentration": "EDP",
+    "family": "Amadeirado Fresco Frutado",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Mineral",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Evodia (Fruta aromática)",
+        "Limão Siciliano",
+        "Mandarina"
+      ],
+      "heart": [
+        "Notas Minerais",
+        "Lavanda",
+        "Gerânio"
+      ],
+      "base": [
+        "Cedro",
+        "Patchouli",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Fruta Evodia com cítricos vibrantes e frescor mineral moderno. Dinâmico e revigorante."
+  },
+  "103": {
+    "brand": "O Boticário",
+    "name": "Zaad Infinity",
+    "concentration": "EDP",
+    "family": "Amadeirado Aromático Especiado",
+    "accords": [
+      "Amadeirado",
+      "Aromático",
+      "Especiado Fresco",
+      "Versátil"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Pimenta Rosa",
+        "Abacaxi"
+      ],
+      "heart": [
+        "Lavanda",
+        "Gerânio",
+        "Cravo"
+      ],
+      "base": [
+        "Cedro",
+        "Sândalo",
+        "Fava Tonka",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Equilíbrio entre abacaxi fresco, pimenta rosa e madeiras nobres. Assinatura versátil elegante."
+  },
+  "104": {
+    "brand": "O Boticário",
+    "name": "Zaad Santal",
+    "concentration": "EDP",
+    "family": "Amadeirado Sândalo Nobre",
+    "accords": [
+      "Sândalo",
+      "Amadeirado",
+      "Especiado Quente",
+      "Cremoso"
+    ],
+    "pyramid": {
+      "top": [
+        "Noz-moscada",
+        "Pimenta Rosa"
+      ],
+      "heart": [
+        "Sândalo da Nova Caledônia",
+        "Cedro"
+      ],
+      "base": [
+        "Âmbar",
+        "Couro",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "formal",
+      "noite"
+    ],
+    "intensity": 3,
+    "character": "Sândalo cremoso e rico da Nova Caledônia com toque especiado e madeiras aveludadas. O Zaad mais requintado."
+  },
+  "105": {
+    "brand": "O Boticário",
+    "name": "Zaad Vision",
+    "concentration": "EDP",
+    "family": "Amadeirado Oriental Couro Especiado",
+    "accords": [
+      "Amadeirado",
+      "Couro",
+      "Balsâmico",
+      "Especiado Quente"
+    ],
+    "pyramid": {
+      "top": [
+        "Mandarina",
+        "Noz-moscada",
+        "Tomilho"
+      ],
+      "heart": [
+        "Bálsamo de Gurjan",
+        "Madeira Guaiac",
+        "Cedro"
+      ],
+      "base": [
+        "Couro",
+        "Âmbar",
+        "Mirra"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Couro escuro, bálsamo resinoso e mirra com fundo amadeirado potente. Para noites frias de elegância sóbria."
+  },
+  "106": {
+    "brand": "Paris Corner",
+    "name": "Voux Zingy",
+    "concentration": "EDP",
+    "family": "Cítrico Aromático Especiado",
+    "accords": [
+      "Cítrico",
+      "Especiado Fresco",
+      "Terroso",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Toranja",
+        "Limão Siciliano",
+        "Pimenta Rosa"
+      ],
+      "heart": [
+        "Cravo",
+        "Canela",
+        "Gerânio"
+      ],
+      "base": [
+        "Vetiver",
+        "Cedro",
+        "Benjoim",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Toranja efervescente e picante com vetiver e benjoim (clone refinado de Sospiro Basso). Revigorante e sofisticado."
+  },
+  "107": {
+    "brand": "Prada",
+    "name": "Amber Pour Homme",
+    "concentration": "EDT",
+    "family": "Oriental Fougère Limpo Sabonete de Luxo",
+    "accords": [
+      "Sabonete de Luxo",
+      "Âmbar Limpo",
+      "Atalcado",
+      "Fougère",
+      "Especiado Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo",
+        "Bergamota",
+        "Mandarina",
+        "Néroli"
+      ],
+      "heart": [
+        "Mirra",
+        "Flor de Laranjeira",
+        "Gerânio",
+        "Almíscar"
+      ],
+      "base": [
+        "Âmbar",
+        "Baunilha",
+        "Sândalo",
+        "Couro",
+        "Patchouli",
+        "Açafrão"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal",
+      "detox"
+    ],
+    "intensity": 3,
+    "character": "O cheiro definitivo do homem impecável: sabonete de barbearia cinco estrelas, âmbar translúcido e néroli. Atemporal."
+  },
+  "108": {
+    "brand": "Prada",
+    "name": "Luna Rossa Sport",
+    "concentration": "EDT",
+    "family": "Oriental Especiado Baunilha Lavanda",
+    "accords": [
+      "Baunilha",
+      "Lavanda",
+      "Doce",
+      "Aromático",
+      "Especiado Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Bagas de Zimbro",
+        "Gengibre"
+      ],
+      "heart": [
+        "Lavanda"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Baunilha"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "cotidiano",
+      "noite",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Lavanda aromática envolta em baunilha cremosa e gengibre fresco. Confortável, sensual e versátil."
+  },
+  "109": {
+    "brand": "Prada",
+    "name": "L’Homme",
+    "concentration": "EDT",
+    "family": "Amadeirado Chipre Floral / Íris Barbershop",
+    "accords": [
+      "Íris Limpa",
+      "Atalcado",
+      "Floral Fresco",
+      "Amadeirado",
+      "Sabonete Fino"
+    ],
+    "pyramid": {
+      "top": [
+        "Néroli",
+        "Pimenta Preta",
+        "Cardamomo",
+        "Sementes de Cenoura"
+      ],
+      "heart": [
+        "Íris",
+        "Violeta",
+        "Gerânio",
+        "Chá Mate"
+      ],
+      "base": [
+        "Âmbar",
+        "Cedro",
+        "Patchouli",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "O Santo Graal dos perfumes de escritório: néroli e íris limpa como uma camisa branca de algodão egípcio recém-passada."
+  },
+  "110": {
+    "brand": "Prada",
+    "name": "L’Homme Intense",
+    "concentration": "EDP",
+    "family": "Oriental Amadeirado Íris Couro",
+    "accords": [
+      "Íris Densa",
+      "Atalcado",
+      "Couro",
+      "Âmbar",
+      "Doce Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Íris Nobre"
+      ],
+      "heart": [
+        "Âmbar",
+        "Patchouli"
+      ],
+      "base": [
+        "Couro",
+        "Fava Tonka",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "trabalho",
+      "formal",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "A íris assinatura da Prada aprofundada por couro negro, patchouli e fava tonka. Sofisticação executiva e noturna máxima."
+  },
+  "111": {
+    "brand": "Rabanne",
+    "name": "1 Million Parfum",
+    "concentration": "Parfum",
+    "family": "Couro Floral Salgado Solar",
+    "accords": [
+      "Tuberosa",
+      "Salgado",
+      "Couro",
+      "Âmbar",
+      "Solar"
+    ],
+    "pyramid": {
+      "top": [
+        "Tuberosa",
+        "Sal Marinho",
+        "Notas Solares"
+      ],
+      "heart": [
+        "Couro",
+        "Óleo de Monoi"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Ládano",
+        "Pinheiro",
+        "Cashmeran"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "noite",
+      "social",
+      "frio"
+    ],
+    "intensity": 5,
+    "character": "Tuberosa floral e couro aquecidos por sal marinho e resinas solares. Rastro e projeção monumentais."
+  },
+  "112": {
+    "brand": "Rabanne",
+    "name": "Black XS (2018)",
+    "concentration": "EDT",
+    "family": "Oriental Amadeirado Doce Cítrico",
+    "accords": [
+      "Doce",
+      "Frutado",
+      "Especiado Quente",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cítricos",
+        "Limão Siciliano",
+        "Tagetes",
+        "Sálvia"
+      ],
+      "heart": [
+        "Pralinê",
+        "Canela",
+        "Cardamomo Preto",
+        "Bálsamo Tolu"
+      ],
+      "base": [
+        "Patchouli Preto",
+        "Âmbar Negro",
+        "Jacarandá",
+        "Ébano"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "encontros",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Pralinê doce e canela com frutas escuras e madeiras de ébano. Jovem, rebelde e sedutor."
+  },
+  "113": {
+    "brand": "Rabanne",
+    "name": "Invictus Legend",
+    "concentration": "EDP",
+    "family": "Amadeirado Aquático Doce Âmbar",
+    "accords": [
+      "Marinho",
+      "Salgado",
+      "Doce",
+      "Amadeirado",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Notas Marinhas",
+        "Sal Marinho",
+        "Toranja"
+      ],
+      "heart": [
+        "Folha de Louro",
+        "Gerânio",
+        "Especiarias"
+      ],
+      "base": [
+        "Âmbar Vermelho",
+        "Madeira Guaiac"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "social",
+      "noite",
+      "calor"
+    ],
+    "intensity": 4,
+    "character": "Oceano salgado e folha de louro com base ambarada doce e potente. Campeão de elogios em baladas e calor noturno."
+  },
+  "114": {
+    "brand": "Rabanne",
+    "name": "Invictus Parfum",
+    "concentration": "Parfum",
+    "family": "Aquático Aromático Amadeirado",
+    "accords": [
+      "Aquático",
+      "Amadeirado",
+      "Sabonete",
+      "Almiscarado"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Rosa",
+        "Notas Marinhas",
+        "Lavanda"
+      ],
+      "heart": [
+        "Sabonete Negro",
+        "Murta",
+        "Folha de Violeta"
+      ],
+      "base": [
+        "Cashmeran",
+        "Almíscar",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "social",
+      "noite"
+    ],
+    "intensity": 4,
+    "character": "Frescor aquático aliado a sabonete aromático negro e madeiras de cashmeran. Potência e versatilidade."
+  },
+  "115": {
+    "brand": "Ralph Lauren",
+    "name": "Polo 67",
+    "concentration": "EDT",
+    "family": "Cítrico Aromático Frutado",
+    "accords": [
+      "Frutado",
+      "Cítrico",
+      "Aromático",
+      "Verde",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Abacaxi",
+        "Limão"
+      ],
+      "heart": [
+        "Sálvia Esclareia",
+        "Bagas de Zimbro",
+        "Rosa Mosqueta"
+      ],
+      "base": [
+        "Patchouli",
+        "Vetiver",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "trabalho"
+    ],
+    "intensity": 3,
+    "character": "Abacaxi suculento e cítricos energéticos com sálvia e madeiras frescas. Jovem e vibrante."
+  },
+  "116": {
+    "brand": "Ralph Lauren",
+    "name": "Polo Black",
+    "concentration": "EDT",
+    "family": "Amadeirado Aromático Frutado Tropical",
+    "accords": [
+      "Frutado",
+      "Amadeirado",
+      "Aromático",
+      "Fresco",
+      "Tropical"
+    ],
+    "pyramid": {
+      "top": [
+        "Manga Gelada",
+        "Sálvia",
+        "Mandarina"
+      ],
+      "heart": [
+        "Artemísia",
+        "Limão Siciliano",
+        "Hêdione"
+      ],
+      "base": [
+        "Patchouli Preto",
+        "Fava Tonka",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "social",
+      "noite",
+      "cotidiano",
+      "encontros"
+    ],
+    "intensity": 3,
+    "character": "Manga gelada combinada com sálvia e patchouli escuro. Elegante, moderno e descontraído."
+  },
+  "117": {
+    "brand": "Ralph Lauren",
+    "name": "Polo Blue",
+    "concentration": "EDT",
+    "family": "Aromático Fougère Aquático Clássico",
+    "accords": [
+      "Ozônico",
+      "Aquático",
+      "Aromático",
+      "Camurça",
+      "Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Pepino",
+        "Melão",
+        "Mandarina"
+      ],
+      "heart": [
+        "Manjericão",
+        "Sálvia",
+        "Gerânio"
+      ],
+      "base": [
+        "Camurça",
+        "Notas Amadeiradas",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Acorde aquoso de pepino e melão com ervas aromáticas e fundo macio de camurça. Um ícone do frescor esportivo."
+  },
+  "118": {
+    "brand": "Ralph Lauren",
+    "name": "Polo Cologne Intense",
+    "concentration": "EDP",
+    "family": "Aromático Fougère Herbal Moderno",
+    "accords": [
+      "Herbal",
+      "Aromático",
+      "Menta",
+      "Cítrico",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Hortelã",
+        "Toranja",
+        "Manjericão"
+      ],
+      "heart": [
+        "Sálvia Esclareia",
+        "Folha de Violeta",
+        "Tomilho"
+      ],
+      "base": [
+        "Ambroxan",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "Hortelã fresca e manjericão sobre sálvia elegante e ambroxan. A modernização perfeita do legado verde de Polo."
+  },
+  "119": {
+    "brand": "Rasasi",
+    "name": "Hawas Black",
+    "concentration": "EDP",
+    "family": "Amadeirado Cítrico Aromático Esfumado",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Esfumado",
+      "Amadeirado",
+      "Musgoso"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Abacaxi",
+        "Maçã"
+      ],
+      "heart": [
+        "Vidoeiro",
+        "Cedro",
+        "Jasmim"
+      ],
+      "base": [
+        "Musgo de Carvalho",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Frutado e esfumado com abacaxi e madeiras escuras, com a performance lendária da casa Rasasi."
+  },
+  "120": {
+    "brand": "Rayhaan",
+    "name": "Aquatica",
+    "concentration": "EDP",
+    "family": "Aquático Cítrico Aromático",
+    "accords": [
+      "Marinho",
+      "Cítrico",
+      "Aromático",
+      "Aquático",
+      "Herbal"
+    ],
+    "pyramid": {
+      "top": [
+        "Notas Marinhas",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Alecrim",
+        "Lavanda",
+        "Cipreste"
+      ],
+      "base": [
+        "Patchouli",
+        "Almíscar",
+        "Âmbar Cinzento"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "praia",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Água do mar profunda e alecrim aromático (DNA Acqua di Giò Profondo). Frescor oceânico impecável para o calor."
+  },
+  "121": {
+    "brand": "Reyane Tradition",
+    "name": "Insurrection II Wild",
+    "concentration": "EDT",
+    "family": "Oriental Baunilha Tabaco Mel",
+    "accords": [
+      "Mel",
+      "Tabaco",
+      "Baunilha",
+      "Especiado Quente",
+      "Cacau"
+    ],
+    "pyramid": {
+      "top": [
+        "Mel Branco",
+        "Folha de Tabaco",
+        "Baunilha"
+      ],
+      "heart": [
+        "Canela",
+        "Cacau",
+        "Patchouli"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Âmbar",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social",
+      "casa"
+    ],
+    "intensity": 4,
+    "character": "Mel puro, tabaco aromático doce e cacau com baunilha (clone fiel de Pure Havane de Mugler). Quente e aconchegante."
+  },
+  "122": {
+    "brand": "Rochas",
+    "name": "Moustache Eau de Parfum",
+    "concentration": "EDP",
+    "family": "Oriental Amadeirado Baunilha Rosa",
+    "accords": [
+      "Baunilha",
+      "Balsâmico",
+      "Benjoim",
+      "Rosa",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Rosa",
+        "Mandarina"
+      ],
+      "heart": [
+        "Cedro Atlas",
+        "Rosa Búlgara"
+      ],
+      "base": [
+        "Baunilha Bourbon",
+        "Benjoim",
+        "Patchouli"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "formal",
+      "encontros",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Rosa masculina aveludada, benjoim cremoso e baunilha bourbon (DNA YSL Tuxedo). Elegância aristocrática em traje de gala."
+  },
+  "123": {
+    "brand": "Sapientiae Niche",
+    "name": "Above All",
+    "concentration": "Parfum",
+    "family": "Amadeirado Oriental Especiado Frutado",
+    "accords": [
+      "Amadeirado",
+      "Resinoso",
+      "Frutado",
+      "Especiado",
+      "Oud"
+    ],
+    "pyramid": {
+      "top": [
+        "Damasco",
+        "Bergamota",
+        "Mandarina"
+      ],
+      "heart": [
+        "Olíbano",
+        "Mirra",
+        "Noz-moscada"
+      ],
+      "base": [
+        "Agarwood (Oud)",
+        "Patchouli",
+        "Âmbar",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "formal"
+    ],
+    "intensity": 4,
+    "character": "Nicho brasileiro de alta perfumaria: resinas sagradas de mirra e olíbano com frutas secas e madeiras nobres."
+  },
+  "124": {
+    "brand": "Sapientiae Niche",
+    "name": "Bergalicius",
+    "concentration": "Parfum",
+    "family": "Cítrico Aromático Alta Fixação",
+    "accords": [
+      "Cítrico",
+      "Chá Verde",
+      "Amadeirado",
+      "Fresco",
+      "Verde"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota da Calábria",
+        "Limão Cravo",
+        "Cidra"
+      ],
+      "heart": [
+        "Néroli",
+        "Chá Verde",
+        "Lavanda"
+      ],
+      "base": [
+        "Cedro da Virgínia",
+        "Vetiver",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 3,
+    "character": "Explosão natural de bergamotas nobres e chá verde em concentração de parfum. Cítrico com fixação real."
+  },
+  "125": {
+    "brand": "Sapientiae Niche",
+    "name": "Cocoventura",
+    "concentration": "Parfum",
+    "family": "Oriental Frutado Tropical Coco Baunilha",
+    "accords": [
+      "Coco",
+      "Baunilha",
+      "Doce Tropical",
+      "Alcoólico",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Coco Tostado",
+        "Abacaxi",
+        "Bergamota"
+      ],
+      "heart": [
+        "Canela",
+        "Jasmim",
+        "Rum"
+      ],
+      "base": [
+        "Baunilha de Madagascar",
+        "Fava Tonka",
+        "Âmbar",
+        "Sândalo"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "social",
+      "noite",
+      "encontros"
+    ],
+    "intensity": 4,
+    "character": "Coco tostado com rum e baunilha cremosa. Tropical sofisticado, evoca noites quentes à beira-mar."
+  },
+  "126": {
+    "brand": "Sapientiae Niche",
+    "name": "Etéreo",
+    "concentration": "Parfum",
+    "family": "Floral Branco Almiscarado Limpo",
+    "accords": [
+      "Almiscarado Limpo",
+      "Floral Branco",
+      "Sereno",
+      "Segunda Pele"
+    ],
+    "pyramid": {
+      "top": [
+        "Néroli",
+        "Flor de Laranjeira",
+        "Bergamota"
+      ],
+      "heart": [
+        "Lírio-do-vale",
+        "Íris"
+      ],
+      "base": [
+        "Almíscar Branco Puro",
+        "Madeira de Teca"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "casa",
+      "trabalho",
+      "detox",
+      "cotidiano"
+    ],
+    "intensity": 2,
+    "character": "Almíscar branco angelical e flor de laranjeira pura. Efeito segunda pele zen, perfeito para descanso sensorial."
+  },
+  "127": {
+    "brand": "Sapientiae Niche",
+    "name": "In The Green",
+    "concentration": "Parfum",
+    "family": "Verde Aromático Herbal Folhagens",
+    "accords": [
+      "Verde",
+      "Herbal",
+      "Terroso",
+      "Fresco",
+      "Coníferas"
+    ],
+    "pyramid": {
+      "top": [
+        "Gálbano",
+        "Grama Cortada",
+        "Folha de Tomate",
+        "Hortelã"
+      ],
+      "heart": [
+        "Alecrim",
+        "Sálvia",
+        "Manjericão"
+      ],
+      "base": [
+        "Vetiver",
+        "Musgo de Carvalho",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 3,
+    "character": "Folhas de tomate esmagadas e grama orvalhada cortada na hora. Um dos verdes mais hiper-realistas da perfumaria."
+  },
+  "128": {
+    "brand": "Sapientiae Niche",
+    "name": "Lemonice",
+    "concentration": "Parfum",
+    "family": "Cítrico Aquático Gelado Hortelã",
+    "accords": [
+      "Cítrico Gelado",
+      "Hortelã",
+      "Aquático",
+      "Refrescante"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Hortelã",
+        "Gengibre"
+      ],
+      "heart": [
+        "Notas Glaciais",
+        "Eucalipto"
+      ],
+      "base": [
+        "Almíscar",
+        "Cedro Branco"
+      ]
+    },
+    "seasons": [
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "detox"
+    ],
+    "intensity": 3,
+    "character": "Limonada suíça glacial com cubos de gelo e eucalipto refrescante. O alívio térmico máximo para dias de calor sufocante."
+  },
+  "129": {
+    "brand": "Sapientiae Niche",
+    "name": "Mary O.",
+    "concentration": "Parfum",
+    "family": "Amadeirado Floral Incensado Especiado",
+    "accords": [
+      "Incenso",
+      "Íris",
+      "Couro",
+      "Amadeirado",
+      "Especiado"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo",
+        "Pimenta Preta",
+        "Bergamota"
+      ],
+      "heart": [
+        "Íris",
+        "Rosa Negra",
+        "Incenso"
+      ],
+      "base": [
+        "Couro",
+        "Tabaco",
+        "Âmbar",
+        "Vetiver"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "noite",
+      "frio",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Incenso meditativo com íris e couro esfumado. Perfume de autor com alma mística e profunda."
+  },
+  "130": {
+    "brand": "Sapientiae Niche",
+    "name": "Vetiver de Noir",
+    "concentration": "Parfum",
+    "family": "Amadeirado Terroso Vetiver Café Escuro",
+    "accords": [
+      "Vetiver Escuro",
+      "Café",
+      "Terroso",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Café Torrado",
+        "Bergamota"
+      ],
+      "heart": [
+        "Vetiver Bourbon",
+        "Vetiver do Haiti",
+        "Noz-moscada"
+      ],
+      "base": [
+        "Patchouli Escuro",
+        "Cedro",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno"
+    ],
+    "occasions": [
+      "trabalho",
+      "formal",
+      "frio"
+    ],
+    "intensity": 4,
+    "character": "Vetiver defumado combinado com grãos de café torrado e patchouli úmido. Complexo, viril e intelectual."
+  },
+  "131": {
+    "brand": "Sospiro",
+    "name": "Vibrato",
+    "concentration": "EDP",
+    "family": "Cítrico Floral Especiado Nobre",
+    "accords": [
+      "Cítrico",
+      "Gengibre",
+      "Amadeirado",
+      "Almiscarado",
+      "Floral Branco"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota",
+        "Toranja",
+        "Mandarina",
+        "Jasmim"
+      ],
+      "heart": [
+        "Gengibre",
+        "Notas Herbais",
+        "Magnólia"
+      ],
+      "base": [
+        "Cedro",
+        "Patchouli",
+        "Raiz de Íris",
+        "Âmbar",
+        "Almíscar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "social",
+      "calor"
+    ],
+    "intensity": 4,
+    "character": "A coroa máxima dos cítricos de luxo: toranja cintilante e gengibre picante sobre madeiras sedosas. Fixação eterna."
+  },
+  "132": {
+    "brand": "Tommy Hilfiger",
+    "name": "Tommy",
+    "concentration": "EDT",
+    "family": "Cítrico Aromático Frutado Herbal",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Herbal",
+      "Fresco",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Hortelã",
+        "Bergamota",
+        "Toranja",
+        "Lavanda"
+      ],
+      "heart": [
+        "Maçã Granny Smith",
+        "Cranberry",
+        "Rosa"
+      ],
+      "base": [
+        "Flor de Algodão",
+        "Cacto",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "casa"
+    ],
+    "intensity": 2,
+    "character": "Maçã verde americana, hortelã e flor de algodão. Aroma limpo, descontraído e refrescante."
+  },
+  "133": {
+    "brand": "Versace",
+    "name": "Eros Energy",
+    "concentration": "EDP",
+    "family": "Cítrico Aromático Efervescente",
+    "accords": [
+      "Cítrico",
+      "Frutado",
+      "Especiado Fresco",
+      "Amadeirado"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota Italiana",
+        "Laranja Sanguínea",
+        "Limão",
+        "Mandarina",
+        "Lima"
+      ],
+      "heart": [
+        "Pimenta Rosa",
+        "Groselha Preta",
+        "Âmbar Branco"
+      ],
+      "base": [
+        "Patchouli",
+        "Almíscar",
+        "Musgo de Carvalho"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "calor",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 4,
+    "character": "Coquetel cítrico efervescente de bergamota, limão e groselha sobre almíscar moderno e patchouli."
+  },
+  "134": {
+    "brand": "Versace",
+    "name": "Pour Homme",
+    "concentration": "EDT",
+    "family": "Cítrico Aromático Floral Fougère",
+    "accords": [
+      "Cítrico",
+      "Floral Fresco",
+      "Aromático",
+      "Almiscarado",
+      "Limpo"
+    ],
+    "pyramid": {
+      "top": [
+        "Limão Siciliano",
+        "Néroli",
+        "Bergamota",
+        "Rosa de Maio"
+      ],
+      "heart": [
+        "Jacinto",
+        "Cedro",
+        "Sálvia Esclareia",
+        "Gerânio"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Almíscar",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "verao",
+      "primavera"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "calor"
+    ],
+    "intensity": 3,
+    "character": "O coringa supremo da perfumaria mediterrânea: limão e néroli sobre jacinto e cedro limpo. Agrada a todos."
+  },
+  "135": {
+    "brand": "Versace",
+    "name": "The Dreamer",
+    "concentration": "EDT",
+    "family": "Oriental Fougère Tabaco Floral Limpo",
+    "accords": [
+      "Flor de Tabaco",
+      "Atalcado",
+      "Herbal",
+      "Lavanda",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Bagas de Zimbro",
+        "Estragão",
+        "Artemísia"
+      ],
+      "heart": [
+        "Íris",
+        "Lírio",
+        "Linho"
+      ],
+      "base": [
+        "Flor de Tabaco",
+        "Fava Tonka",
+        "Âmbar",
+        "Cedro"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono"
+    ],
+    "occasions": [
+      "noite",
+      "cotidiano",
+      "casa"
+    ],
+    "intensity": 3,
+    "character": "Flor de tabaco etérea com íris e lavanda atalcada. Sonhador, poético e acolhedor."
+  },
+  "136": {
+    "brand": "Viktor&Rolf",
+    "name": "Spicebomb Extreme",
+    "concentration": "EDP",
+    "family": "Oriental Especiado Tabaco Baunilha",
+    "accords": [
+      "Especiado Quente",
+      "Tabaco",
+      "Baunilha",
+      "Canela",
+      "Doce"
+    ],
+    "pyramid": {
+      "top": [
+        "Pimenta Preta",
+        "Canela",
+        "Pimenta Bourbon",
+        "Alcaravia"
+      ],
+      "heart": [
+        "Folha de Tabaco",
+        "Lavanda"
+      ],
+      "base": [
+        "Baunilha Bourbon",
+        "Fava Tonka",
+        "Âmbar"
+      ]
+    },
+    "seasons": [
+      "inverno",
+      "outono"
+    ],
+    "occasions": [
+      "frio",
+      "noite",
+      "social",
+      "encontros"
+    ],
+    "intensity": 5,
+    "character": "A granada de especiarias no seu ápice: canela ardente, tabaco nobre e baunilha densa. O rei indiscutível do inverno."
+  },
+  "137": {
+    "brand": "Yves Saint Laurent",
+    "name": "La Nuit de L’Homme",
+    "concentration": "EDT",
+    "family": "Amadeirado Especiado Cardamomo Sedutor",
+    "accords": [
+      "Cardamomo",
+      "Aromático",
+      "Amadeirado",
+      "Especiado Fresco",
+      "Lavanda"
+    ],
+    "pyramid": {
+      "top": [
+        "Cardamomo da Guatemala"
+      ],
+      "heart": [
+        "Lavanda Francesa",
+        "Cedro da Virgínia",
+        "Bergamota"
+      ],
+      "base": [
+        "Vetiver",
+        "Alcaravia"
+      ]
+    },
+    "seasons": [
+      "outono",
+      "inverno",
+      "primavera"
+    ],
+    "occasions": [
+      "encontros",
+      "noite",
+      "frio"
+    ],
+    "intensity": 3,
+    "character": "O cardamomo mais magnético e sensual da perfumaria mundial. Criado para intimidade, encontros e sedução velada."
+  },
+  "138": {
+    "brand": "Yves Saint Laurent",
+    "name": "L’Homme",
+    "concentration": "EDT",
+    "family": "Amadeirado Floral Almiscarado Gengibre",
+    "accords": [
+      "Gengibre",
+      "Cítrico",
+      "Amadeirado",
+      "Aromático",
+      "Floral"
+    ],
+    "pyramid": {
+      "top": [
+        "Gengibre",
+        "Bergamota",
+        "Limão"
+      ],
+      "heart": [
+        "Especiarias",
+        "Folha de Violeta",
+        "Pimenta Branca",
+        "Manjericão"
+      ],
+      "base": [
+        "Fava Tonka",
+        "Cedro",
+        "Vetiver do Taiti"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Gengibre fresco e violeta sobre fundo amadeirado suave e fava tonka. Sofisticação discreta para o homem moderno."
+  },
+  "139": {
+    "brand": "Yves Saint Laurent",
+    "name": "L’Homme Ultime",
+    "concentration": "EDP",
+    "family": "Amadeirado Floral Rosa Masculina Gengibre",
+    "accords": [
+      "Rosa Masculina",
+      "Gengibre",
+      "Amadeirado",
+      "Cítrico",
+      "Aromático"
+    ],
+    "pyramid": {
+      "top": [
+        "Gengibre",
+        "Toranja",
+        "Cardamomo",
+        "Bergamota"
+      ],
+      "heart": [
+        "Rosa Damascena",
+        "Sálvia",
+        "Gerânio",
+        "Maçã"
+      ],
+      "base": [
+        "Cedro",
+        "Vetiver",
+        "Madeira de Cashmere"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "outono",
+      "verao"
+    ],
+    "occasions": [
+      "trabalho",
+      "cotidiano",
+      "formal"
+    ],
+    "intensity": 3,
+    "character": "Rosa damascena aromática e viril impulsionada por gengibre e toranja. Elegância contemporânea para o dia."
+  },
+  "140": {
+    "brand": "Yves Saint Laurent",
+    "name": "MYSLF Eau de Parfum",
+    "concentration": "EDP",
+    "family": "Cítrico Floral Amadeirado Contemporâneo",
+    "accords": [
+      "Flor de Laranjeira",
+      "Cítrico",
+      "Amadeirado",
+      "Limpo",
+      "Ambroxan"
+    ],
+    "pyramid": {
+      "top": [
+        "Bergamota da Calábria",
+        "Bergamota Verde"
+      ],
+      "heart": [
+        "Flor de Laranjeira da Tunísia"
+      ],
+      "base": [
+        "Ambrofix (Ambroxan)",
+        "Patchouli da Indonésia"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao",
+      "outono"
+    ],
+    "occasions": [
+      "cotidiano",
+      "trabalho",
+      "noite",
+      "social"
+    ],
+    "intensity": 3,
+    "character": "Flor de laranjeira moderna e bergamota sobre base limpa e viciante de ambrofix. Fácil de usar, agradável e coringa."
+  },
+  "141": {
+    "brand": "Yves Saint Laurent",
+    "name": "Y Eau de Toilette",
+    "concentration": "EDT",
+    "family": "Aromático Fougère Mineral Branco",
+    "accords": [
+      "Aldeídico",
+      "Aromático",
+      "Cítrico",
+      "Amadeirado",
+      "Fresco"
+    ],
+    "pyramid": {
+      "top": [
+        "Aldeídos Brancos",
+        "Bergamota",
+        "Gengibre"
+      ],
+      "heart": [
+        "Sálvia Esclareia",
+        "Gerânio",
+        "Folha de Violeta"
+      ],
+      "base": [
+        "Âmbar Cinzento",
+        "Olíbano",
+        "Cedro",
+        "Fava Tonka"
+      ]
+    },
+    "seasons": [
+      "primavera",
+      "verao"
+    ],
+    "occasions": [
+      "calor",
+      "trabalho",
+      "cotidiano"
+    ],
+    "intensity": 3,
+    "character": "Aldeídos brancos limpos, sálvia e gengibre sobre base mineral moderna. Sensação de frescor enérgico e duradouro."
+  }
+}
